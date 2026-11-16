@@ -49,7 +49,7 @@ show_tile: true
 				<header class="major">
 					<h3>Resistive thin disk (work in progress)</h3>
 				</header>
-				<p>We simulate a cooled accretion disk around a black hole with effective charge-starved resistivity in the truncated state.  We wish to understand how the fast reconnection rate from charge-starved resistivity affects the flaring and flux erruptions in the disk.</p>
+				<p>We simulate a cooled accretion disk around a black hole with effective charge-starved resistivity in the truncated state.  We wish to understand how the fast reconnection rate from charge-starved resistivity affects the flux erruptions in the thin disk and whether it may be able to trigger a state transition.</p>
 				<ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
 				</ul>
@@ -65,7 +65,7 @@ show_tile: true
 				<header class="major">
 					<h3>2-temperature reconnection (work in progress)</h3>
 				</header>
-				<p>We evolve an electron entropy equation with a resistive source term in an RRMHD simulation of a local-box reconnection layer for a physically-informed heating prescription between electrons and ions.</p>
+				<p>We evolve an electron entropy equation with an Ohmic resistive source term in an RRMHD simulation of a local-box reconnection layer for a physically-informed heating prescription between electrons and ions.</p>
 				<ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
 				</ul>
