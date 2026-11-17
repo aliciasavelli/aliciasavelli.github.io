@@ -13,6 +13,7 @@ nav-menu: true
 show_tile: true
 tile_icon: fa-smile-o            # badge on the home-page card
 tile_accent: accent1           # card colour on the home page (accent1-6)
+tile_order: 1                # position of the tile on the home page
 ---
 
 <!-- Main -->
@@ -36,6 +37,7 @@ I completed my undergraduate education at Brock University, where I received my 
 </span>
 My primary research interests lie in the extreme plasma processes occurring just outside the event horizon of accreting black holes. I work on analytical and numerical modelling of plasma energization that powers high-energy emission, specifically using kinetic theory to inform fluid models of relativistic plasmas. Of particular interest to me is a region of very hot, diffuse plasma surrounding accreting black holes called the corona, and my PhD thesis aims to advance models of coronal emission in GRMHD simulations of such environments, improving our understanding of how these systems radiate.
 
+<!-- TODO: this picture is also the Galaxy Research page's banner and home tile - use a different one on one of the pages -->
 <span class="image left square">
     <img src="{{ site.baseurl }}/assets/images/galaxy.png" alt="Simulated galaxy from the EAGLE simulations" />
     <span class="caption">Credit: EAGLE</span>
@@ -49,6 +51,7 @@ I have a secondary interest in galaxy evolution, specifically in models for feed
 </ul>
 
 ## <span class="badge fa-microphone"></span>Outreach
+<!-- TODO: this photo is also the Outreach page's banner and home tile - use a different one on one of the pages -->
 <span class="image right">
     <img src="{{ site.baseurl }}/assets/images/AstroOnTap.jpg" alt="Alicia giving a public talk titled Can we see black holes?" />
 </span>

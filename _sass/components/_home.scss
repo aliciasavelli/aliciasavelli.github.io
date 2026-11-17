@@ -80,6 +80,19 @@
 			&:before { opacity: 0.6; }
 			&:hover:before { opacity: 0; }
 
+			// Pages that aren't ready yet: not clickable, and the tint stays on.
+			&.coming-soon {
+				cursor: default;
+
+				&:hover:before { opacity: 0.6; }
+
+				p:before {
+					content: '\f017';   // clock icon
+					font-family: FontAwesome;
+					margin-right: 0.6em;
+				}
+			}
+
 			// White badge so it shows up on the coloured tile.
 			.badge {
 				background: _palette(fg-bold);

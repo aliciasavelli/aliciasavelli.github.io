@@ -10,6 +10,7 @@ nav-menu: true
 show_tile: true
 tile_icon: fa-magnet            # badge on the home-page card
 tile_accent: accent2           # card colour on the home page (accent1-6)
+tile_order: 2                # position of the tile on the home page
 ---
 
 <!--

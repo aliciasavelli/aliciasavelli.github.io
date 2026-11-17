@@ -36,6 +36,39 @@
 			padding: 1.5em 1.85em;
 		}
 
+		// Intro card tinted in the page's own colour (class="intro tinted"), with bold words in a
+		// lighter version of it. Used on the galaxy and outreach pages.
+		.intro.tinted {
+			background: linear-gradient(135deg,
+				color-mix(in srgb, var(--accent) 22%, transparent),
+				color-mix(in srgb, var(--accent) 8%, transparent));
+
+			margin-bottom: 2em;
+
+			strong { color: color-mix(in srgb, var(--accent) 70%, white); }
+			> p:last-child { margin-bottom: 0; }
+		}
+
+		// Stand-in for an introduction that isn't written yet.
+		.intro.placeholder {
+			align-items: center;
+			background: none;
+			border: dashed 2px var(--accent);
+			border-radius: 14px;
+			color: var(--accent);
+			display: flex;
+			font-size: 0.8em;
+			font-weight: _font(weight-bold);
+			gap: 0.9em;
+			justify-content: center;
+			letter-spacing: _font(letter-spacing-alt);
+			margin-bottom: 2em;
+			padding: 2.25em 1.5em;
+			text-transform: uppercase;
+
+			.fa { font-size: 1.5em; }
+		}
+
 		// Headings: coloured icon badge, then a soft line in the same colour.
 		h2 {
 			align-items: center;
@@ -102,6 +135,33 @@
 			margin: 0 0 1.5em 2.25em;
 
 			img { box-shadow: -7px 7px 0 var(--accent); }
+		}
+
+		// Stand-in for a picture that isn't chosen yet: <span class="image left placeholder">.
+		.image.placeholder {
+			align-items: center;
+			aspect-ratio: 4 / 3;
+			border: dashed 2px var(--accent);
+			border-radius: 10px;
+			box-shadow: 7px 7px 0 var(--accent);
+			color: var(--accent);
+			display: flex !important;   // stays centred on phones too
+			flex-direction: column;
+			gap: 0.6em;
+			justify-content: center;
+			text-align: center;
+
+			margin-bottom: 2.5em !important;   // room before the next heading
+			&.right { box-shadow: -7px 7px 0 var(--accent); }
+
+			.fa { font-size: 1.75em; }
+
+			> span:last-child {
+				font-size: 0.7em;
+				font-weight: _font(weight-bold);
+				letter-spacing: _font(letter-spacing-alt);
+				text-transform: uppercase;
+			}
 		}
 
 		// Square science figures sit a little smaller.
