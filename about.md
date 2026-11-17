@@ -55,7 +55,7 @@ Outside of science, I love to read (my favourite books are *Project Hail Mary* a
 <div class="gallery">
     <span class="image polaroid wide" style="--ar: 1.5;"><img src="{{ site.baseurl }}/assets/images/halifax.JPG" alt="Alicia hiking in Cape Breton in the fall" /><span class="note">Cape Breton</span></span>
     <span class="image polaroid" style="--ar: 0.667;"><img src="{{ site.baseurl }}/assets/images/iceland.jpg" alt="Alicia in a basalt column canyon in Iceland" /><span class="note">Iceland</span></span>
-    <span class="image polaroid" style="--ar: 0.75;"><img src="{{ site.baseurl }}/assets/images/Charlotte.jpg" alt="Alicia with her cat, Charlotte" /><span class="note">Charlotte!</span></span>
+    <span class="image polaroid" style="--ar: 0.75;"><img src="{{ site.baseurl }}/assets/images/Charlotte.jpg" alt="Alicia with her cat, Charlotte" /><span class="note">Charlotte at the Eras Tour!</span></span>
 </div>
 
 </div>
