@@ -1,0 +1,102 @@
+/* Home page: research topics in the banner and the page cards ("Explore").
+   Pill buttons and badges come from _figures.scss (.cute).
+   Colour coding: each page has one colour (tile_accent in its front matter), used for its card. */
+
+	// Research topics: plain text separated by dots, so they don't look like buttons.
+	#banner .topics {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0.8em;
+		font-weight: _font(weight-bold);
+		gap: 0.4em 0;
+		letter-spacing: _font(letter-spacing-alt);
+		list-style: none;
+		padding: 0;
+		text-transform: uppercase;
+
+		li {
+			padding: 0;
+			white-space: nowrap;
+
+			&:not(:last-child):after {
+				content: '\2022';
+				margin: 0 0.9em;
+				opacity: 0.5;
+			}
+		}
+
+		@include breakpoint(small) {
+			font-size: 0.7em;
+		}
+	}
+
+	// Banner buttons: small white pills like the reading-level toggle on the plasma page.
+	// The first one (Overview) is filled in; the others fill in when you hover.
+	#banner > .inner > .content.cute {
+		> * { margin-left: 0; }   // line the topics and buttons up on the left
+		> .topics { margin-bottom: 1.75em; }
+
+		ul.actions li {
+			padding-bottom: 0.75em;
+		}
+
+		.button {
+			background-color: rgba(36, 41, 67, 0.55);
+			box-shadow: inset 0 0 0 2px _palette(fg-bold);
+			color: _palette(fg-bold);
+
+			&:before { color: inherit; }
+
+			&:hover,
+			&.special {
+				background-color: _palette(fg-bold);
+				box-shadow: inset 0 0 0 2px _palette(fg-bold);
+				color: _palette(bg) !important;
+			}
+
+			&.special:hover {
+				background-color: transparent;
+				color: _palette(fg-bold) !important;
+			}
+		}
+	}
+
+	// Page tiles: the theme's photo tiles, rounded and spaced out, each tinted in its page's
+	// colour (tile_accent). The tint is lighter than the theme's and still fades away on hover.
+	.home-tiles.tiles {
+		gap: 1.75em;
+		padding: 2.5em 2.5em 0.5em 2.5em;
+
+		article {
+			border-radius: 18px;
+			flex: 1 1 calc(50% - 0.875em) !important;
+			width: auto !important;
+
+			@for $i from 1 through 6 {
+				&.accent#{$i} { --accent: #{_palette(accent#{$i})}; }
+				&.accent#{$i}:before { background-color: _palette(accent#{$i}); }
+			}
+
+			&:before { opacity: 0.6; }
+			&:hover:before { opacity: 0; }
+
+			// White badge so it shows up on the coloured tile.
+			.badge {
+				background: _palette(fg-bold);
+				color: var(--accent);
+				font-size: 0.55em;
+				margin-right: 0.75em;
+				vertical-align: 0.35em;
+			}
+		}
+
+		@include breakpoint(small) {
+			gap: 1.25em;
+			padding: 1.5em 1.25em 0.25em 1.25em;
+		}
+
+		@include breakpoint(xsmall) {
+			display: flex;   // the theme switches to block on phones, which drops the gap
+			flex-direction: column;
+		}
+	}

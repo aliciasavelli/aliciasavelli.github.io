@@ -3,14 +3,16 @@
 {% elsif 'pages' == site.tiles-source %}
     {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
-<section id="one" class="tiles">
+<!-- Page tiles. Each page with show_tile: true gets a tile, coloured by its tile_accent (accent1-6);
+     tile_icon (e.g. fa-magnet) adds a badge to the title. -->
+<section id="one" class="tiles home-tiles cute">
   {% for tile in tiles limit:site.tiles-count %}
-  <article>
+  <article class="{{ tile.tile_accent }}">
     <span class="image">
       <img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}" />
     </span>
     <header class="major">
-      <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+      <h3><a href="{{ tile.url  | relative_url }}" class="link">{% if tile.tile_icon %}<span class="badge {{ tile.tile_icon }}"></span>{% endif %}{{ tile.title }}</a></h3>
       <p>{{ tile.description }}</p>
     </header>
   </article>

@@ -18,12 +18,16 @@
             <header class="major">
                 <h1>{{ page.landing-title }}</h1>
             </header>
-            <div class="content" style="display: block;">
-                <p style="text-transform: uppercase; margin-bottom: 2em;">{{ site.description }}</p>
+            <div class="content cute" style="display: block;">
+                <!-- Research topics: edit the list in _config.yml (description), separated by ", " -->
+                <ul class="topics">
+                    {% assign topics = site.description | split: ", " %}
+                    {% for topic in topics %}<li>{{ topic }}</li>{% endfor %}
+                </ul>
                 <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Overview</a></li>
-                    <li><a href="Alicia_Savelli_CV.pdf" class="button">CV</a></li>
-                    <li><a href="https://ui.adsabs.harvard.edu/public-libraries/veCStOwMSHa-qBoVTqnBKQ" class="button">Publications</a></li>
+                    <li><a href="#one" class="button small special icon fa-arrow-down scrolly">Overview</a></li>
+                    <li><a href="Alicia_Savelli_CV.pdf" class="button small icon fa-file-text-o">CV</a></li>
+                    <li><a href="https://ui.adsabs.harvard.edu/public-libraries/veCStOwMSHa-qBoVTqnBKQ" class="button small icon fa-book">Publications</a></li>
                 </ul>
             </div>
         </div>
@@ -36,9 +40,6 @@
       }
       #banner:after { opacity: 0.6; }
     </style>
-
-    <!-- Main -->
-    <div id="main">
 
     <!-- Main -->
     <div id="main">

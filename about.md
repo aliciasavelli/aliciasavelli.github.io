@@ -10,6 +10,8 @@ banner_overlay: 0.35
 banner_focus: 35% 20%       # which part of the photo stays in view (horizontal, vertical)
 nav-menu: true
 show_tile: true
+tile_icon: fa-smile-o            # badge on the home-page card
+tile_accent: accent1           # card colour on the home page (accent1-6)
 ---
 
 <!-- Main -->
