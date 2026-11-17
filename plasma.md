@@ -3,6 +3,8 @@ layout: landing
 title: Plasma Research
 description: Highlighted projects
 image: assets/images/Plasmoids.jpg
+banner_aspect: 3999 / 2250   # width / height of the banner image: shows the whole picture
+banner_overlay: 0.35         # opacity of the purple tint over the banner (theme default 0.85)
 tile_image: 
 nav-menu: true
 show_tile: true

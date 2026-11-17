@@ -1,0 +1,26 @@
+/* Banner options (set per page in the front matter of pages using layout: landing)
+     banner_aspect:  width / height of the banner image, e.g. 3999 / 2250
+                     -> banner is sized to the image so the whole picture shows
+     banner_overlay: opacity of the coloured tint over the image (theme default 0.85)
+*/
+
+	#banner:after {
+		opacity: var(--banner-overlay, 0.85);
+	}
+
+	#banner.banner-full {
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+		height: auto;
+		max-height: none;
+		min-height: 22em;
+
+		> .inner {
+			text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35);
+		}
+
+		@include breakpoint(small) {
+			min-height: 0;
+		}
+	}
