@@ -51,13 +51,40 @@
 				margin: 0;
 			}
 
-			// ORCID isn't in this theme's icon font, so its logo is cut out of the same white circle as
-			// the other icons. Logo: Font Awesome Free "orcid" (https://fontawesome.com, CC BY 4.0).
+			// Profile icons work like the site's buttons: a white outline that fills in white on hover
+			// (instead of the theme's filled circle that turns blue).
+			a.icon.alt {
+				&:before {
+					background-color: transparent;
+					box-shadow: inset 0 0 0 2px _palette(fg-bold);
+					color: _palette(fg-bold);
+				}
+
+				&:hover:before,
+				&:active:before {
+					background-color: _palette(fg-bold);
+					box-shadow: none;
+					color: _palette(bg);
+				}
+			}
+
+			// ORCID isn't in this theme's icon font, so its logo is drawn with a mask: a white ring with
+			// "iD" letters, filling in on hover. Logo: Font Awesome Free "orcid" (fontawesome.com, CC BY 4.0).
 			.icon-orcid:before {
-				$orcid: "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z'/%3E%3C/svg%3E";
+				$orcid-outline: "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill-rule='evenodd' d='M256 8a248 248 0 1 0 0 496a248 248 0 1 0 0-496zM256 40a216 216 0 1 1 0 432a216 216 0 1 1 0-432z'/%3E%3Cpath d='M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z'/%3E%3C/svg%3E";
 				content: '\00a0';   // a blank character, so it lines up like the other icons
-				-webkit-mask: url($orcid) center / 100% 100% no-repeat;
-				mask: url($orcid) center / 100% 100% no-repeat;
+				background-color: _palette(fg-bold) !important;
+				box-shadow: none !important;
+				-webkit-mask: url($orcid-outline) center / 100% 100% no-repeat;
+				mask: url($orcid-outline) center / 100% 100% no-repeat;
+			}
+
+			// On hover the ORCID logo fills in: a white circle with the "iD" cut out.
+			a.icon.alt.icon-orcid:hover:before,
+			a.icon.alt.icon-orcid:active:before {
+				$orcid: "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z'/%3E%3C/svg%3E";
+				-webkit-mask-image: url($orcid);
+				mask-image: url($orcid);
 			}
 		}
 	}
