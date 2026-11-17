@@ -6,11 +6,11 @@
 	}
 
 	.level-toggle {
-		margin: 0 0 2em 0;
+		margin: 0 0 2.5em 0;
 
 		.level-toggle-label {
 			display: block;
-			margin: 0 0 0.75em 0;
+			margin: 0 0 1.5em 0;
 			font-size: 0.8em;
 			font-weight: 600;
 			letter-spacing: 0.25em;
@@ -29,4 +29,10 @@
 	.level-todo {
 		font-style: italic;
 		opacity: 0.6;
+	}
+
+	// Bold key phrases: a lighter version of the purple tile colour (accent2, #8d82c4),
+	// lightened so it stays readable on small screens.
+	.levels strong {
+		color: #a69ce0;
 	}
