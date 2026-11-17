@@ -29,10 +29,8 @@ show_tile: true
 
 <!-- One -->
 <section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>(G)R(R)MHD simulations of plasma in extreme astrophysical environments</h2>
-		</header>
+	<div class="inner cute accent2">
+		<h2><span class="badge fa-magnet"></span>(G)R(R)MHD simulations of plasma in extreme astrophysical environments</h2>
 		<div class="level-toggle" hidden>
 			<span class="level-toggle-label">Written for</span>
 			<ul class="actions">
@@ -41,7 +39,7 @@ show_tile: true
 				<li><button type="button" class="button small" data-set-level="plasma">Plasma astrophysicist</button></li>
 			</ul>
 		</div>
-		<div class="levels">
+		<div class="levels intro">
 			<div data-level="student" hidden>
 				<p>Black holes and neutron stars are home to some of the most extreme environments in the Universe.  The highly relativistic plasma (gas made up of charged particles) falling onto these compact objects produces <strong>bright emission</strong>, making it our key to probing these environments.</p>
 				<p>The conditions there are so extreme that they cannot be reproduced on Earth, and so we turn to computer simulations to study them.  However, the typical system size is roughly 100 billion times bigger than the individual particle interactions producing the emission, so <strong>no single simulation can cover all of this ground</strong>.  Instead, we use two complementary approaches: particle simulations (particle-in-cell, or PIC) capture the micro-scales, but they are computationally expensive and can only model cut-outs of the surrounding plasma, neglecting the compact object and its strong gravity; fluid simulations (general relativistic (resistive) magnetohydrodynamics, or GR(R)MHD) capture the dynamics of the whole system, but miss the micro-processes producing the emission.</p>
@@ -62,20 +60,18 @@ show_tile: true
 	</div>
 </section>
 
-<!-- Two -->
-<section id="two" class="spotlights">
-	<section>
-		<a href="{{ site.baseurl }}/making-reconnection-cooler.html" class="image">
-			<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler-poster.jpg" aria-label="Animation of a cooling reconnection layer: field lines flow into a current sheet that tears into plasmoids, while photons are upscattered by the hot X-points and the moving plasmoids">
-				<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.mp4" type="video/mp4" />
-				<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.webm" type="video/webm" />
-			</video>
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Making Reconnection Cooler</h3>
-				</header>
+<!-- Two: project cards (each card takes its colour from accent1-6; figure sides alternate automatically) -->
+<section id="two">
+	<div class="inner projects cute">
+		<article class="project accent3">
+			<a href="{{ site.baseurl }}/making-reconnection-cooler.html" class="media">
+				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler-poster.jpg" aria-label="Animation of a cooling reconnection layer: field lines flow into a current sheet that tears into plasmoids, while photons are upscattered by the hot X-points and the moving plasmoids">
+					<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.mp4" type="video/mp4" />
+					<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.webm" type="video/webm" />
+				</video>
+			</a>
+			<div class="body">
+				<h3><span class="badge">1</span>Making Reconnection Cooler</h3>
 				<div class="levels">
 					<div data-level="student" hidden>
 						<p>When charged particles are accelerated, they emit radiation, effectively cooling the plasma.  In simulations, this emission is typically modelled as losses of energy and momentum.  We write a subgrid model for fluid simulations of a radiative plasma, in which the energy and momentum lost to radiation are calculated directly from the physical processes that create the emission.  We check our results in small cut-out boxes against &ldquo;ground truth&rdquo; particle simulations, which model the radiation mechanisms from first principles.  Our model captures properties such as the plasma temperature and the speed of the bulk outflows, which are important in global systems like black hole accretion flows and neutron star magnetospheres.</p>
@@ -88,20 +84,15 @@ show_tile: true
 					</div>
 				</div>
 				<ul class="actions">
-					<li><a href="{{ site.baseurl }}/making-reconnection-cooler.html" class="button">Learn more</a></li>
+					<li><a href="{{ site.baseurl }}/making-reconnection-cooler.html" class="button icon fa-arrow-right">Learn more</a></li>
 				</ul>
 			</div>
-		</div>
-	</section>
-	<section>
-		<span class="image">
-			<img src="{{ site.baseurl }}/assets/images/pic09.jpg" alt="" data-position="top center" />
-		</span>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Resistive thin disk (work in progress)</h3>
-				</header>
+		</article>
+		<article class="project accent1">
+			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
+			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<div class="body">
+				<h3><span class="badge">2</span>Resistive thin disk <span class="tag">Work in progress</span></h3>
 				<div class="levels">
 					<div data-level="student" hidden>
 						<p>Magnetic fields around black holes can be forced to dissipate, converting their stored magnetic energy into thermal and kinetic energy of the surrounding plasma.  Particle simulations show that magnetic fields dissipate about ten times faster than standard fluid simulations predict, and fluid simulations can now be adjusted to match, but this has not yet been done for a full simulation of an accretion disk, the disk of gas spiralling into a black hole.  In some cases, strong magnetic fields near the black hole hold back the inner edge of the disk, shutting off accretion and black hole growth.  We want to see whether faster dissipation of the magnetic field can free the disk from this state.  We also track how many protons from the disk reach the hot, diffuse region around the black hole known as the &ldquo;corona&rdquo;, where they may produce the high-energy neutrinos detected by the IceCube observatory.</p>
@@ -117,17 +108,12 @@ show_tile: true
 					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
-		</div>
-	</section>
-	<section>
-		<span class="image">
-			<img src="{{ site.baseurl }}/assets/images/pic10.jpg" alt="" data-position="25% 25%" />
-		</span>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>2-temperature reconnection (work in progress)</h3>
-				</header>
+		</article>
+		<article class="project accent6">
+			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
+			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<div class="body">
+				<h3><span class="badge">3</span>2-temperature reconnection <span class="tag">Work in progress</span></h3>
 				<div class="levels">
 					<div data-level="student" hidden>
 						<p>Around black holes, such as the one at the centre of our Galaxy, the plasma is so hot and thin that its particles rarely collide, so the electrons and protons can have very different temperatures.  The light we observe comes from the electrons, which means their temperature sets what our telescopes see, including the Event Horizon Telescope&rsquo;s images of black holes.  However, fluid simulations usually treat the electrons and protons as a single fluid, with the electron temperature painted on afterwards, so it cannot affect how the system evolves.  In small cut-out boxes, we instead track the electrons separately, heating the plasma through the physical dissipation of magnetic fields and using particle simulations to decide how much of this heat goes to the electrons versus the protons.  This gives a more physical recipe for electron temperatures in simulations of the full system.</p>
@@ -143,19 +129,17 @@ show_tile: true
 					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
-		</div>
-	</section>
+		</article>
+	</div>
 </section>
 
 <!-- Three -->
 <section id="three">
-	<div class="inner">
-		<header class="major">
-			<h2>All publications</h2>
-		</header>
+	<div class="inner cute accent4">
+		<h2><span class="badge fa-book"></span>All publications</h2>
 		<p>Above I have provided in-depth descriptions of selected projects I have worked on.  For a full list of my publications, click the link below.</p>
 		<ul class="actions">
-			<li><a href="https://ui.adsabs.harvard.edu/public-libraries/veCStOwMSHa-qBoVTqnBKQ" class="button next">My publications</a></li>
+			<li><a href="https://ui.adsabs.harvard.edu/public-libraries/veCStOwMSHa-qBoVTqnBKQ" class="button icon fa-arrow-right">My publications</a></li>
 		</ul>
 	</div>
 </section>

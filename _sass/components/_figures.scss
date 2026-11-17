@@ -1,17 +1,26 @@
-/* About page: section badges, framed figures, credit lines and the polaroid photo row.
-   Everything here is scoped to <div class="inner about">, so other pages are unaffected. */
+/* Shared "cute" page styling: section badges, framed figures, credit lines, pill buttons
+   and the polaroid photo row. Used by the About page (<div class="inner about">) and by any
+   block with class "cute" (plasma page). Other pages are unaffected. */
 
+	// Colour helpers: add class accent1 ... accent6 to a block to set its colour.
+	@for $i from 1 through 6 {
+		.accent#{$i} { --accent: #{_palette(accent#{$i})}; }
+	}
+
+	// About page: each section takes its colour from its heading (1st, 2nd, 3rd, 4th h2 on the page).
+	// Change the order of colours here to recolour the sections.
 	.about {
 		--accent: #{_palette(accent1)};
 
-		// Each section takes its colour from its heading (1st, 2nd, 3rd, 4th h2 on the page).
-		// Change the order of colours here to recolour the sections.
 		h2:nth-of-type(1), h2:nth-of-type(1) ~ * { --accent: #{_palette(accent1)}; }
 		h2:nth-of-type(2), h2:nth-of-type(2) ~ * { --accent: #{_palette(accent2)}; }
 		h2:nth-of-type(3), h2:nth-of-type(3) ~ * { --accent: #{_palette(accent3)}; }
 		h2:nth-of-type(4), h2:nth-of-type(4) ~ * { --accent: #{_palette(accent4)}; }
+	}
 
-		// Intro card at the top: add {: .intro} on the line after the paragraph.
+	.about, .cute {
+
+		// Intro card: add {: .intro} on the line after a paragraph, or class="intro" on a block.
 		.intro {
 			background: linear-gradient(135deg, rgba(141, 130, 196, 0.22), rgba(236, 141, 129, 0.12));
 			border: solid 1px rgba(212, 212, 255, 0.12);
