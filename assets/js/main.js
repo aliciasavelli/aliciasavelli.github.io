@@ -48,9 +48,12 @@
 
 				// banner-centered (see _sass/layout/_banner-options.scss): image scrolls with the page,
 				// starts centred, and drifts down gently as you scroll (parallax).
-				var centered = $t.hasClass('banner-centered');
+				// Optional focus point (front matter banner_focus, e.g. "35% 20%" = horizontal, vertical).
+				var centered = $t.hasClass('banner-centered'),
+					focus = ($t.attr('data-focus') || 'center 50%').split(' '),
+					fx = focus[0], fy = focus[1] || '50%';
 
-				$t.css('background-position', centered ? 'center 50%' : 'center 100%, center 100%, center 0px');
+				$t.css('background-position', centered ? fx + ' ' + fy : 'center 100%, center 100%, center 0px');
 
 				$window
 					.on('scroll._parallax', function() {
@@ -58,7 +61,7 @@
 						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
 
 						if (centered)
-							$t.css('background-position', 'center calc(50% + ' + (pos * 0.25) + 'px)');
+							$t.css('background-position', fx + ' calc(' + fy + ' + ' + (pos * 0.25) + 'px)');
 						else
 							$t.css('background-position', 'center ' + (pos * (-1 * intensity)) + 'px');
 

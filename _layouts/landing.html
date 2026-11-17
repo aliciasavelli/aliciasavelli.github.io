@@ -12,7 +12,7 @@
 
         {% include header.html %}
 
-        <section id="banner" class="style2{% if page.banner_center %} banner-centered{% endif %}"{% if page.banner_overlay %} style="--banner-overlay: {{ page.banner_overlay }};"{% endif %}>
+        <section id="banner" class="style2{% if page.banner_center %} banner-centered{% endif %}"{% if page.banner_overlay %} style="--banner-overlay: {{ page.banner_overlay }};"{% endif %}{% if page.banner_focus %} data-focus="{{ page.banner_focus }}"{% endif %}>
             <div class="inner">
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
@@ -24,7 +24,7 @@
                 </header>
                 <div class="content">
 
-                    {{ page.description }}
+                    {{ page.banner_text | default: page.description }}
 
                 </div>
             </div>
