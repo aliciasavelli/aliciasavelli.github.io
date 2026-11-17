@@ -39,6 +39,12 @@ My primary research interests lie in the extreme plasma processes occurring just
 </span>
 I have a secondary interest in galaxy evolution, specifically in models for feedback from black holes or stars in cosmological simulations.  I have used Milky Way analogues -- galaxies similar to our own -- as a test subject to understand how the physics going into these models may have led to different evolution pathways for the Milky Way.  
 
+<!-- When the galaxy page is ready, swap the span for: <a href="{{ site.baseurl }}/galaxies.html" class="button icon fa-arrow-right">Galaxy research</a> -->
+<ul class="actions">
+    <li><a href="{{ site.baseurl }}/plasma.html" class="button icon fa-arrow-right">Plasma research</a></li>
+    <li><span class="button disabled">Galaxy research &middot; coming soon</span></li>
+</ul>
+
 ## <span class="badge fa-microphone"></span>Outreach
 <span class="image right">
     <img src="{{ site.baseurl }}/assets/images/AstroOnTap.jpg" alt="Alicia giving a public talk titled Can we see black holes?" />
@@ -46,6 +52,11 @@ I have a secondary interest in galaxy evolution, specifically in models for feed
 Although I gave up teaching, my interest in sharing my passion for physics and astronomy with anyone who will listen remains.  I believe science should be accessible to everyone, and want to help bridge the gap between the jargony science and language that anyone at any level can understand. I want to empower both the younger generation to feel like science is exciting and fun and something they can do themselves, as well as the older generation who didn't go into science but may still have an interest (just ask my dad).
 
 Most notably, I love to yap.  I have given many outreach talks on a variety of subjects to a variety of audiences.  I have had the pleasure to give lectures in big auditoriums to the general public, run workshops for science educators, and participate in K-12 classroom visits.  I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/).
+
+<!-- When the outreach page is ready, swap the span for: <a href="{{ site.baseurl }}/outreach.html" class="button icon fa-arrow-right">Outreach</a> -->
+<ul class="actions">
+    <li><span class="button disabled">Outreach &middot; coming soon</span></li>
+</ul>
 
 ## <span class="badge fa-paw"></span>Offline
 Outside of science, I love to read (my favourite books are *Project Hail Mary* and *The Book Thief*) and bake.  I play a few instruments and have participated in several bands; currently I am a clarinetist in the [Toronto Concert Band](https://torontoconcertband.com/).  I am also a huge Swiftie!  I love to go outside and have recently become a fan of backpacking and camping.  More than anything, I am obsessed with my cat, Charlotte.  
