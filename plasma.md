@@ -91,8 +91,12 @@ tile_accent: accent2           # card colour on the home page (accent1-6)
 			</div>
 		</article>
 		<article class="project accent1">
-			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
-			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<span class="media">
+				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/resistive-thin-disk-poster.jpg" aria-label="Animation of a magnetically arrested accretion cycle: a thin disk accretes onto a black hole whose jet field builds up and pushes the disk back, then the equatorial current sheet reconnects and ejects a flux tube that wraps around the disk and holds it back until accretion resumes">
+					<source src="{{ site.baseurl }}/assets/images/plasma/resistive-thin-disk.mp4" type="video/mp4" />
+					<source src="{{ site.baseurl }}/assets/images/plasma/resistive-thin-disk.webm" type="video/webm" />
+				</video>
+			</span>
 			<div class="body">
 				<h3><span class="badge">2</span>Resistive thin disk <span class="tag">Work in progress</span></h3>
 				<div class="levels">
