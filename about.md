@@ -7,6 +7,7 @@ image: assets/images/desk.jpg
 tile_image: assets/images/cherry_blossoms.jpeg
 banner_center: true
 banner_overlay: 0.35
+banner_style: 1              # banner tint colour: 1-6 = accent1-6 (1 = blue, matching the home tile)
 banner_focus: 35% 20%       # which part of the photo stays in view (horizontal, vertical)
 nav-menu: true
 show_tile: true
@@ -19,7 +20,7 @@ tile_accent: accent1           # card colour on the home page (accent1-6)
 <section id="one" markdown="1">
 <div class="inner about" markdown="1">
 
-I'm currently a PhD candidate in the David A. Dunlap Department of Astronomy & Astrophysics and the Canadian Institute for Theoretical Astrophysics at the University of Toronto, working with Profs. Bart Ripperda and Norman Murray in the field of relativistic plasma astrophysics.  I'm also a member of the Simons Collaboration on Extreme Electrodynamics of Compact Sources ([SCEECS](https://www.simonsceecs.com/)).  I am very passionate about science, outreach, and especially my cat.
+I'm currently a **PhD candidate** in the David A. Dunlap Department of Astronomy & Astrophysics and the Canadian Institute for Theoretical Astrophysics at the University of Toronto, working with Profs. Bart Ripperda and Norman Murray in the field of **relativistic plasma astrophysics**.  I'm also a member of the Simons Collaboration on Extreme Electrodynamics of Compact Sources ([SCEECS](https://www.simonsceecs.com/)).  I am very passionate about science, outreach, and especially **my cat**.
 {: .intro}
 
 ## <span class="badge fa-graduation-cap"></span>Education

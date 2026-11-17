@@ -1,84 +1,64 @@
-<!-- Contact -->
-<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<section class="split">
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
-				</div>
-			</section>
+<!-- Contact: small cards for email, address and profile links (the "socials" list in _config.yml). The email address is never written into
+     the page; it is put together in the browser when someone clicks "Show email"
+     (assets/js/contact.js), so bots that scrape pages for addresses can't find it.
+     The two halves of the address are email_user / email_domain in _config.yml. -->
+<section id="get-in-touch" class="contact-cards-section">
+	<div class="inner cute contact-neutral">
+		<h2><span class="badge fa-envelope-o"></span>Get in touch</h2>
+		<div class="contact-cards">
+			<div class="contact-card">
+				<span class="badge fa-envelope"></span>
+				<h3>Email</h3>
+				<button type="button" class="button small icon fa-eye email-reveal"
+					data-u="{{ site.email_user | split: '' | reverse | join: '' }}"
+					data-d="{{ site.email_domain | split: '' | reverse | join: '' }}">Show email</button>
+			</div>
 			{% if site.phone %}
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
-				</div>
-			</section>
+			<div class="contact-card">
+				<span class="badge fa-phone"></span>
+				<h3>Phone</h3>
+				<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+			</div>
 			{% endif %}
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }} 
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
-					</span>
-				</div>
-			</section>
-		</section>
+			<div class="contact-card">
+				<span class="badge fa-map-marker"></span>
+				<h3>Address</h3>
+				<p>
+					{% if site.street_address %}{{ site.street_address }}<br />{% endif %}
+					{% if site.city %}{{ site.city }},{% endif %}
+					{% if site.state %}{{ site.state }}{% endif %}
+					{% if site.zip_code %}{{ site.zip_code }}{% endif %}
+					{% if site.country %}{{ site.country }}{% endif %}
+				</p>
+			</div>
+			<div class="contact-card">
+				<span class="badge fa-user"></span>
+				<h3>Profiles</h3>
+				<ul class="icons">
+					{% for key_value in site.socials %}
+						{% if key_value[1] %}
+							<li>
+								{% assign key = key_value[0] | downcase %}
+								{% case key %}
+									{% when 'orcid' %}{% assign icon = 'icon-orcid' %}
+									{% when 'google-scholar' %}{% assign icon = 'fa-graduation-cap' %}
+									{% else %}{% assign icon = 'fa-' | append: key %}
+								{% endcase %}
+								<a href="{{ key_value[1] }}" class="icon alt {{ icon }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}" title="{{ key_value[0] }}">
+									<span class="label">{{ key_value[0] }}</span>
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>
 
 <!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
-			<ul class="icons">
-				{% for key_value in site.socials %}
-					{% if key_value[1] %}
-						<li>
-							<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
-								<span class="label">{{ key_value[0] }}</span>
-							</a>
-						</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
 			<ul class="copyright">
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
@@ -98,3 +78,4 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/contact.js" | absolute_url }}"></script>

@@ -1,7 +1,9 @@
 # site settings
 title: Alicia Savelli
 subtitle: PhD Candidate in Astrophysics
-email: alicia.savelli@utoronto.ca
+# Email is split in two (no "@" anywhere) so bots can't scrape it; the site's "Show email" button joins it back up.
+email_user: alicia.savelli
+email_domain: utoronto.ca
 description: Relativistic plasma astrophysics, radiative plasma physics, (G)RRMHD, PIC, galaxy evolution
 baseurl: "/website"
 url: "https://aliciasavelli.github.io"
@@ -21,7 +23,10 @@ tiles-count: 5
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
+# Profile links shown in the footer's Profiles card (leave blank to hide). ORCID and Google-Scholar get their own icons.
 socials:
+  ORCID: https://orcid.org/0000-0003-0147-9562
+  Google-Scholar:
   GitHub: https://github.com/aliciasavelli
   GitLab:
   Google-Plus: 

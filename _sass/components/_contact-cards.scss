@@ -1,0 +1,68 @@
+/* Footer contact section: small cards for email, address and links (see _includes/footer.html).
+   Kept white/neutral on purpose: colours on this site belong to pages. */
+
+	.contact-cards-section {
+		border-top: solid 1px _palette(border);
+
+		.contact-neutral {
+			--accent: #{_palette(fg-bold)};
+		}
+
+		.contact-cards {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5em;
+		}
+
+		.contact-card {
+			background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+			border: solid 1px rgba(212, 212, 255, 0.1);
+			border-radius: 18px;
+			flex: 1 1 14em;
+			padding: 1.75em 1.75em 1.5em 1.75em;
+
+			> .badge {
+				font-size: 1em;
+				margin-bottom: 1em;
+			}
+
+			h3 {
+				font-size: 0.8em;
+				letter-spacing: _font(letter-spacing-alt);
+				margin-bottom: 0.75em;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-size: 0.9em;
+				margin: 0;
+			}
+
+			.button {
+				font-family: inherit;
+			}
+
+			.email-address {
+				font-size: 0.9em;
+				word-break: break-all;
+			}
+
+			ul.icons {
+				margin: 0;
+			}
+
+			// ORCID isn't in this theme's icon font, so its logo is cut out of the same white circle as
+			// the other icons. Logo: Font Awesome Free "orcid" (https://fontawesome.com, CC BY 4.0).
+			.icon-orcid:before {
+				$orcid: "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z'/%3E%3C/svg%3E";
+				content: '\00a0';   // a blank character, so it lines up like the other icons
+				-webkit-mask: url($orcid) center / 100% 100% no-repeat;
+				mask: url($orcid) center / 100% 100% no-repeat;
+			}
+		}
+	}
+
+	// The links moved into the contact cards, so the footer is just the credits line.
+	#footer .copyright {
+		margin-bottom: 0;
+	}
