@@ -1,0 +1,8 @@
+/* Looping animations in place of spotlight images (plasma.md tiles) */
+
+	.spotlights > section > .image video {
+		display: block;
+		width: 100%;
+		height: auto;
+		pointer-events: none;     /* clicks go to the surrounding link */
+	}

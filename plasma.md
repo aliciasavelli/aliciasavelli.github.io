@@ -66,7 +66,10 @@ show_tile: true
 <section id="two" class="spotlights">
 	<section>
 		<a href="{{ site.baseurl }}/making-reconnection-cooler.html" class="image">
-			<img src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.jpg" alt="" data-position="center center" />
+			<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler-poster.jpg" aria-label="Animation of a cooling reconnection layer: field lines flow into a current sheet that tears into plasmoids, while photons are upscattered by the hot X-points and the moving plasmoids">
+				<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.mp4" type="video/mp4" />
+				<source src="{{ site.baseurl }}/assets/images/plasma/making-reconnection-cooler.webm" type="video/webm" />
+			</video>
 		</a>
 		<div class="content">
 			<div class="inner">
