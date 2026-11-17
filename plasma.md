@@ -77,7 +77,7 @@ show_tile: true
 					{% if jekyll.environment != "production" %}<div data-level="student" hidden><p class="level-todo">Student version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					{% if jekyll.environment != "production" %}<div data-level="astronomer" hidden><p class="level-todo">Astronomer version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					<div data-level="plasma" data-default>
-						<p>We add an energy and momentum sink term to the RRMHD equations coupled to an effective charge-starved resistivity prescription to model radiative losses due to inverse Compton cooling in a local-box reconnection layer.  Our sink term is able to reproduce macroscopic properties from kinetic simulations, including the fast reconnection rate, the temperature in the current sheet, and the bulk motions of the outflow.  Our results set the stage for more accurate reconnection sites in global simulations of black holes and neutron stars.</p>
+						<p>Radiative cooling in collisionless reconnection has been studied extensively with kinetic simulations, but has never been modelled with a fluid approach that can reach global scales.  We add an energy and momentum sink term to the RRMHD equations, coupled to an effective charge-starved resistivity prescription, to model radiative losses due to inverse Compton and synchrotron cooling in a local-box reconnection layer.  Our sink term reproduces macroscopic properties from kinetic simulations, including the fast reconnection rate, the temperature in the current sheet, and the bulk motions of the outflow.  Our results set the stage for more accurate modelling of reconnection sites in global simulations of black holes and neutron stars.</p>
 					</div>
 				</div>
 				<ul class="actions">
@@ -99,7 +99,7 @@ show_tile: true
 					{% if jekyll.environment != "production" %}<div data-level="student" hidden><p class="level-todo">Student version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					{% if jekyll.environment != "production" %}<div data-level="astronomer" hidden><p class="level-todo">Astronomer version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					<div data-level="plasma" data-default>
-						<p>We simulate a cooled accretion disk around a black hole with effective charge-starved resistivity in the truncated state.  We wish to understand how the fast reconnection rate from charge-starved resistivity affects the flux eruptions in the thin disk and whether it may be able to trigger a state transition.</p>
+						<p>The fast (~0.1) reconnection rate of collisionless plasmas has not yet been modelled in a global accretion disk simulation.  We simulate a cooled accretion disk around a black hole with effective charge-starved resistivity in the truncated state, to understand how this fast rate affects the flux eruptions in the thin disk and see whether it may be able to trigger a transition back into an accreting state.  We also add a fluid tracer to track mixing of the disk material with the inner &ldquo;corona&rdquo;, as protons supplied to this region are a candidate source of IceCube neutrinos from Seyfert galaxies such as NGC 1068.</p>
 					</div>
 				</div>
 				<ul class="actions">
@@ -121,7 +121,7 @@ show_tile: true
 					{% if jekyll.environment != "production" %}<div data-level="student" hidden><p class="level-todo">Student version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					{% if jekyll.environment != "production" %}<div data-level="astronomer" hidden><p class="level-todo">Astronomer version: not written yet (only visible when previewing locally).</p></div>{% endif %}
 					<div data-level="plasma" data-default>
-						<p>We evolve an electron entropy equation with an Ohmic resistive source term in an RRMHD simulation of a local-box reconnection layer for a physically-informed heating prescription between electrons and ions.</p>
+						<p>The electron temperature sets the emission and images of low-luminosity accreting black holes such as Sgr&nbsp;A&#42; and M87&#42;.  However, electron heating in global simulations is typically calculated from numerical dissipation at the grid scale.  We evolve an electron entropy equation with an Ohmic resistive source term in local RRMHD simulations, taking the fraction of heat that goes to electrons from PIC simulations, for a physically-informed heating prescription between electrons and ions.</p>
 					</div>
 				</div>
 				<ul class="actions">
