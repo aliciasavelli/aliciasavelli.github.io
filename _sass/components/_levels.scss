@@ -1,0 +1,32 @@
+/* Reading-level toggle (see assets/js/levels.js and plasma.md) */
+
+	.levels [hidden],
+	.level-toggle[hidden] {
+		display: none !important;
+	}
+
+	.level-toggle {
+		margin: 0 0 2em 0;
+
+		.level-toggle-label {
+			display: block;
+			margin: 0 0 0.75em 0;
+			font-size: 0.8em;
+			font-weight: 600;
+			letter-spacing: 0.25em;
+			text-transform: uppercase;
+		}
+
+		ul.actions {
+			margin-bottom: 0;
+
+			li {
+				padding-bottom: 0.75em;
+			}
+		}
+	}
+
+	.level-todo {
+		font-style: italic;
+		opacity: 0.6;
+	}
