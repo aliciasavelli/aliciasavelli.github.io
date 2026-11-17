@@ -12,7 +12,7 @@
 
         {% include header.html %}
 
-        <section id="banner" class="style2{% if page.banner_aspect %} banner-full{% endif %}"{% if page.banner_aspect or page.banner_overlay %} style="{% if page.banner_aspect %}aspect-ratio: {{ page.banner_aspect }};{% endif %}{% if page.banner_overlay %} --banner-overlay: {{ page.banner_overlay }};{% endif %}"{% endif %}>
+        <section id="banner" class="style2{% if page.banner_center %} banner-centered{% endif %}"{% if page.banner_overlay %} style="--banner-overlay: {{ page.banner_overlay }};"{% endif %}>
             <div class="inner">
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">

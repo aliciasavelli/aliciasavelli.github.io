@@ -3,7 +3,7 @@ layout: landing
 title: Plasma Research
 description: Highlighted projects
 image: assets/images/Plasmoids.jpg
-banner_aspect: 3999 / 2250   # width / height of the banner image: shows the whole picture
+banner_center: true          # show the middle of the banner image (with a gentle scroll effect)
 banner_overlay: 0.35         # opacity of the purple tint over the banner (theme default 0.85)
 tile_image: 
 nav-menu: true
@@ -87,9 +87,9 @@ show_tile: true
 		</div>
 	</section>
 	<section>
-		<a href="generic.html" class="image">
+		<span class="image">
 			<img src="{{ site.baseurl }}/assets/images/pic09.jpg" alt="" data-position="top center" />
-		</a>
+		</span>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -103,15 +103,15 @@ show_tile: true
 					</div>
 				</div>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section>
-		<a href="generic.html" class="image">
+		<span class="image">
 			<img src="{{ site.baseurl }}/assets/images/pic10.jpg" alt="" data-position="25% 25%" />
-		</a>
+		</span>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -125,7 +125,7 @@ show_tile: true
 					</div>
 				</div>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
 		</div>

@@ -46,14 +46,21 @@
 
 			on = function() {
 
-				$t.css('background-position', 'center 100%, center 100%, center 0px');
+				// banner-centered (see _sass/layout/_banner-options.scss): image scrolls with the page,
+				// starts centred, and drifts down gently as you scroll (parallax).
+				var centered = $t.hasClass('banner-centered');
+
+				$t.css('background-position', centered ? 'center 50%' : 'center 100%, center 100%, center 0px');
 
 				$window
 					.on('scroll._parallax', function() {
 
 						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
 
-						$t.css('background-position', 'center ' + (pos * (-1 * intensity)) + 'px');
+						if (centered)
+							$t.css('background-position', 'center calc(50% + ' + (pos * 0.25) + 'px)');
+						else
+							$t.css('background-position', 'center ' + (pos * (-1 * intensity)) + 'px');
 
 					});
 

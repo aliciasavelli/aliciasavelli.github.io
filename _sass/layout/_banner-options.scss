@@ -1,26 +1,20 @@
 /* Banner options (set per page in the front matter of pages using layout: landing)
-     banner_aspect:  width / height of the banner image, e.g. 3999 / 2250
-                     -> banner is sized to the image so the whole picture shows
-     banner_overlay: opacity of the coloured tint over the image (theme default 0.85)
+     banner_center:  true  -> show the middle of the banner image instead of the top,
+                              keeping the theme's banner height and a gentle scroll (parallax)
+                              effect (see the banner-centered branch in assets/js/main.js)
+     banner_overlay: 0.35  -> opacity of the coloured tint over the image (theme default 0.85)
 */
 
 	#banner:after {
 		opacity: var(--banner-overlay, 0.85);
 	}
 
-	#banner.banner-full {
+	#banner.banner-centered {
 		background-attachment: scroll;
-		background-position: center;
+		background-position: center 50%;
 		background-size: cover;
-		height: auto;
-		max-height: none;
-		min-height: 22em;
 
 		> .inner {
 			text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35);
-		}
-
-		@include breakpoint(small) {
-			min-height: 0;
 		}
 	}
