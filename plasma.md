@@ -117,8 +117,12 @@ tile_order: 2                # position of the tile on the home page
 			</div>
 		</article>
 		<article class="project accent6">
-			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
-			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<span class="media">
+				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/two-temperature-reconnection-poster.jpg" aria-label="Animation of two-temperature heating at a reconnection X-point: cold protons (large, red) and electrons (small, blue) flow in with the magnetic field, are heated as they cross the diffusion region and move out along the outflows, the protons far more than the electrons, and the electrons then radiate photons">
+					<source src="{{ site.baseurl }}/assets/images/plasma/two-temperature-reconnection.mp4" type="video/mp4" />
+					<source src="{{ site.baseurl }}/assets/images/plasma/two-temperature-reconnection.webm" type="video/webm" />
+				</video>
+			</span>
 			<div class="body">
 				<h3><span class="badge">3</span>2-temperature reconnection <span class="tag">Work in progress</span></h3>
 				<div class="levels">
