@@ -36,3 +36,11 @@
 	.levels strong {
 		color: #a69ce0;
 	}
+
+	// Pages in another colour (e.g. making-reconnection-cooler.md, in the pink of its plasma-page card):
+	// bold words in a lighter version of that page's colour. The plasma page itself (accent2) keeps the rule above.
+	@each $i in 1, 3, 4, 5, 6 {
+		.cute.accent#{$i} .levels strong {
+			color: color-mix(in srgb, _palette(accent#{$i}) 70%, white);
+		}
+	}

@@ -1,0 +1,119 @@
+/* Paper & talks blocks on project pages (e.g. making-reconnection-cooler.md).
+   Two looks: .output-cards (side-by-side cards) or .output-list (stacked rows).
+   Colours come from the section's accent (class accentN on the .inner block). */
+
+	.output-cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5em;
+		margin-bottom: 2em;
+	}
+
+	.output-card {
+		background: linear-gradient(160deg,
+			color-mix(in srgb, var(--accent) 14%, transparent),
+			color-mix(in srgb, var(--accent) 4%, transparent));
+		border: solid 1px color-mix(in srgb, var(--accent) 30%, transparent);
+		border-radius: 18px;
+		display: flex;
+		flex: 1 1 18em;
+		flex-direction: column;
+		padding: 1.75em 1.75em 1em 1.75em;
+
+		> .badge {
+			font-size: 1em;
+			margin-bottom: 1em;
+		}
+
+		h3 {
+			font-size: 1em;
+			line-height: 1.45;
+			margin-bottom: 0.6em;
+		}
+
+		ul.actions { margin: auto 0 0 0; padding-top: 0.5em; }   // buttons line up at the bottom of the cards
+	}
+
+	.output-kind {
+		color: var(--accent);
+		display: block;
+		font-size: 0.75em;
+		font-weight: _font(weight-bold);
+		letter-spacing: _font(letter-spacing-alt);
+		margin-bottom: 0.6em;
+		text-transform: uppercase;
+	}
+
+	.output-meta {
+		font-size: 0.9em;
+		margin-bottom: 0.5em;
+		opacity: 0.85;
+
+		strong { color: color-mix(in srgb, var(--accent) 65%, white); }
+	}
+
+	.output-list {
+		list-style: none;
+		margin: 0 0 2em 0;
+		padding: 0;
+
+		> li {
+			align-items: center;
+			border-bottom: solid 1px color-mix(in srgb, var(--accent) 25%, transparent);
+			display: flex;
+			gap: 1.5em;
+			padding: 1.5em 0;
+
+			&:first-child { padding-top: 0.5em; }
+
+			> .badge { font-size: 1em; }
+
+			> .output-text { flex: 1; }
+
+			h3 {
+				font-size: 1em;
+				line-height: 1.45;
+				margin-bottom: 0.4em;
+			}
+
+			.output-meta { margin: 0; }
+
+			> ul.actions {
+				flex-shrink: 0;
+				margin: 0;
+
+				li { padding-bottom: 0; }
+			}
+		}
+
+		@include breakpoint(small) {
+			> li {
+				align-items: flex-start;
+				flex-wrap: wrap;
+
+				> ul.actions { margin-left: calc(2.2em + 1.5em); }
+			}
+		}
+	}
+
+	// A follow-up paper listed inside another card (below a dashed line).
+	.output-followup {
+		border-top: dashed 2px color-mix(in srgb, var(--accent) 45%, transparent);
+		margin-top: 1.25em;
+		padding-top: 1.25em;
+
+		h3 { font-size: 0.9em; }
+		.output-meta { font-size: 0.8em; flex: none; }
+	}
+
+	// Numbered badges (I, II, ...) for a paper series.
+	.output-card > .badge.numeral {
+		font-size: 1em;
+		font-weight: _font(weight-bold);
+		letter-spacing: 0.02em;
+	}
+
+	// 2 x 2 layout: <div class="output-cards two-up">
+	.output-cards.two-up > .output-card {
+		flex-basis: calc(50% - 0.75em);
+	}
