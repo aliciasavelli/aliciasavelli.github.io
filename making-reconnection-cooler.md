@@ -115,6 +115,12 @@ show_tile: false
 				<h3>Recovering Kinetic Relativistic Radiative Reconnection with Inverse Compton Cooling in Magnetohydrodynamics</h3>
 				<ul class="actions"><li><a href="https://online.kitp.ucsb.edu/online/extremeplasma-c25/savelli/" class="button small icon fa-arrow-right">Watch the talk</a></li></ul>
 			</div>
+			<div class="output-card">
+				<span class="badge fa-play"></span>
+				<span class="output-kind">CITA Blackboard Talk &middot; Toronto &middot; Jul 2025</span>
+				<h3>Make Reconnection Cool Again</h3>
+				<ul class="actions"><li><a href="https://www.cita.utoronto.ca/make-reconnection-cool/" class="button small icon fa-arrow-right">Watch the talk</a></li></ul>
+			</div>
 		</div>
 		<ul class="actions">
 			<li><a href="{{ site.baseurl }}/plasma.html" class="button icon fa-arrow-left">Back to Plasma Research</a></li>
