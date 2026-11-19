@@ -1,7 +1,8 @@
 /* Reading-level toggle (see assets/js/levels.js and plasma.md) */
 
 	.levels [hidden],
-	.level-toggle[hidden] {
+	.level-toggle[hidden],
+	[data-show-for][hidden] {
 		display: none !important;
 	}
 
