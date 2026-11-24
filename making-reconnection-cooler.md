@@ -58,8 +58,11 @@ show_tile: false
 <span class="subhead">The answer: magnetic reconnection</span>
 <div class="fig-block">
 <div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Text coming soon</div>
-<figure class="paper-figure placeholder-figure">
-	<div class="box"><span class="fa fa-hourglass-half"></span>Reconnection graphic coming soon</div>
+<figure class="paper-figure plain">
+	<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/plasma/mrc-reconnection-poster.jpg" aria-label="Animation of magnetic reconnection: antiparallel magnetic field lines (lilac pointing right above, green pointing left below) are dragged inwards by the plasma, break and reconnect at a hot X-point, and the reconnected field is carried out in plasmoids that leave the box">
+		<source src="{{ site.baseurl }}/assets/images/plasma/mrc-reconnection.mp4" type="video/mp4" />
+		<source src="{{ site.baseurl }}/assets/images/plasma/mrc-reconnection.webm" type="video/webm" />
+	</video>
 </figure>
 </div>
 </div>

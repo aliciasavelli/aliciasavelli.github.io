@@ -87,6 +87,9 @@
 
 	// Figures already drawn on the page colour: no frame.
 	.paper-figure.plain img { border-radius: 0; box-shadow: none; }
+
+	// Animations (e.g. the student reconnection movie) sit like the figures.
+	.paper-figure video { border-radius: 10px; display: block; width: 100%; }
 	.paper-figure.narrow { max-width: 36em; }
 
 	// One line of small facts separated by dots (e.g. simulation set-up).
