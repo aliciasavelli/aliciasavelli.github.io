@@ -1,8 +1,8 @@
 ---
 layout: landing
 title: Outreach
-description: Coming soon     # change to e.g. "Talks, workshops and events" when the page is ready
-image: assets/images/AstroOnTap.jpg          # TODO: also on the About page (Outreach section) - give one of the two pages a different photo
+description: Talks, workshops and events
+image: assets/images/AstroOnTap.jpg
 banner_center: true
 banner_overlay: 0.35
 banner_style: 3              # banner tint colour: 3 = pink (accent3), the colour of this page's home tile
@@ -11,7 +11,6 @@ show_tile: true
 tile_icon: fa-microphone     # badge on the home-page tile
 tile_accent: accent3         # tile colour on the home page (accent1-6)
 tile_order: 4                # position of the tile on the home page
-coming_soon: true            # tile says "Coming soon" and isn't clickable; delete this line when the page is ready
 ---
 
 <!--
@@ -30,7 +29,9 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Introduction coming soon</div>
 
 ## <span class="badge fa-bullhorn"></span>Public talks
-<span class="image left placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image left">
+    <img src="{{ site.baseurl }}/assets/images/AstroTours.jpg" alt="Alicia giving an AstroTours public talk on black hole formation" />
+</span>
 TODO: a short description of your public talks.
 
 ## <span class="badge fa-users"></span>Discover the Universe
