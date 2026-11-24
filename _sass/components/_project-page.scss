@@ -88,6 +88,26 @@
 	}
 
 
+	// Two figures side by side under the text (40/60, centred vertically); stacked on phones:
+	// <div class="fig-row"> <figure class="paper-figure plain"> + <figure class="paper-figure plain wide">.
+	.fig-row {
+		align-items: center;
+		display: flex;
+		gap: 2em;
+		justify-content: center;
+		margin: 0.5em auto 2.5em auto;
+		max-width: 52em;
+
+		> .paper-figure { flex: 2 1 0; margin: 0; max-width: 26em; min-width: 0; }
+		> .paper-figure.wide { flex: 3 1 0; max-width: none; }
+
+		@include breakpoint(small) {
+			flex-direction: column;
+
+			> .paper-figure, > .paper-figure.wide { flex: none; max-width: 100%; width: 100%; }
+		}
+	}
+
 	// Figures already drawn on the page colour: no frame.
 	.paper-figure.plain img { border-radius: 0; box-shadow: none; }
 

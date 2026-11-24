@@ -34,14 +34,16 @@
 
 	// Bold key phrases: a lighter version of the purple tile colour (accent2, #8d82c4),
 	// lightened so it stays readable on small screens.
-	.levels strong {
+	.levels strong,
+	[data-show-for] strong {
 		color: #a69ce0;
 	}
 
 	// Pages in another colour (e.g. making-reconnection-cooler.md, in the pink of its plasma-page card):
 	// bold words in a lighter version of that page's colour. The plasma page itself (accent2) keeps the rule above.
 	@each $i in 1, 3, 4, 5, 6 {
-		.cute.accent#{$i} .levels strong {
+		.cute.accent#{$i} .levels strong,
+		.cute.accent#{$i} [data-show-for] strong {
 			color: color-mix(in srgb, _palette(accent#{$i}) 70%, white);
 		}
 	}
