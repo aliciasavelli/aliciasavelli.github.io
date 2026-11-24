@@ -35,7 +35,9 @@ tile_order: 4                # position of the tile on the home page
 TODO: a short description of your public talks.
 
 ## <span class="badge fa-users"></span>Discover the Universe
-<span class="image right placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image right">
+    <img src="{{ site.baseurl }}/assets/images/DiscoverTheUniverse.jpg" alt="Discover the Universe logo" />
+</span>
 TODO: a short description of your work with Discover the Universe.
 
 <ul class="actions">
@@ -43,7 +45,9 @@ TODO: a short description of your work with Discover the Universe.
 </ul>
 
 ## <span class="badge fa-flag"></span>Leadership
-<span class="image left placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image left">
+    <img src="{{ site.baseurl }}/assets/images/AstroToursTeam.jpg" alt="Group photo of the AstroTours outreach team" />
+</span>
 TODO: a short description of your outreach leadership roles.
 
 </div>
