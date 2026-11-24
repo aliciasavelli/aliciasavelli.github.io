@@ -2,7 +2,8 @@
 layout: landing
 title: Teaching & Mentorship
 description: Coming soon     # change to e.g. "Courses, students and mentoring" when the page is ready
-image: assets/images/teaching.jpg          # TODO: placeholder starfield - swap for a teaching photo (banner and home tile)
+image: assets/images/TeachingLecture.jpg
+banner_focus: 55% 25%        # which part of the photo stays in view (horizontal, vertical)
 banner_center: true
 banner_overlay: 0.35
 banner_style: 6              # banner tint colour: 6 = green (accent6), the colour of this page's home tile
@@ -30,15 +31,21 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Introduction coming soon</div>
 
 ## <span class="badge fa-pencil"></span>Teaching
-<span class="image left placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image left">
+    <img src="{{ site.baseurl }}/assets/images/WembleyClassroom.jpg" alt="Alicia's maths classroom at Wembley High Technology College" />
+</span>
 TODO: a short description of your teaching (secondary teaching, TA work, guest lectures).
 
 ## <span class="badge fa-lightbulb-o"></span>Student supervision
-<span class="image right placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image right">
+    <img src="{{ site.baseurl }}/assets/images/Whiteboard.jpg" alt="Whiteboard covered in a colour-coded derivation" />
+</span>
 TODO: a short description of the student projects you have supervised.
 
 ## <span class="badge fa-compass"></span>Mentorship & service
-<span class="image left placeholder"><span class="fa fa-hourglass-half"></span><span>Photo coming soon</span></span>
+<span class="image left">
+    <img src="{{ site.baseurl }}/assets/images/SURPPosterSession.jpg" alt="Students and faculty at the SURP poster session" />
+</span>
 TODO: a short description of your mentorship and service roles.
 
 </div>
