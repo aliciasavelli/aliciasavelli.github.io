@@ -148,7 +148,7 @@ tile_order: 2                # position of the tile on the home page
 <section id="three">
 	<div class="inner cute accent4">
 		<h2><span class="badge fa-book"></span>All publications</h2>
-		<p>Above I have provided in-depth descriptions of selected projects I have worked on.  For a full list of my publications, click the link below.</p>
+		<p>Above I have provided in-depth descriptions of selected projects I have worked on.  For a full list of my publications, please click the link below.</p>
 		<ul class="actions">
 			<li><a href="https://ui.adsabs.harvard.edu/public-libraries/veCStOwMSHa-qBoVTqnBKQ" class="button icon fa-arrow-right">My publications</a></li>
 		</ul>
