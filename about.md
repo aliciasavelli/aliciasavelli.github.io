@@ -30,11 +30,6 @@ I'm currently a **PhD candidate** in the David A. Dunlap Department of Astronomy
 </span>
 I completed my undergraduate education at Brock University, where I received my **B.Sc. in Mathematics (Honours) with minor in Physics** and my **B.Ed. with Intermediate/Senior qualifications** together in 2019.  I was then a secondary maths teacher at **Wembley High Technology College** in London, UK for the 2019 academic year.  While I found teaching incredibly rewarding, I missed working out problems myself, so I returned to Brock in 2020 to upgrade my Physics minor, earning me a **B.Sc. in Physics (Honours)** in 2022.  I then entered the graduate program at the University of Toronto, where I am completing my thesis *Multiwavelength emission from Active Galactic Nuclei* under Profs. Bart Ripperda and Norman Murray, expecting to graduate in Summer 2027.  
 
-<!-- When the teaching page is ready, swap the span for: <a href="{{ site.baseurl }}/teaching.html" class="button icon fa-arrow-right">Teaching &amp; mentorship</a> -->
-<ul class="actions">
-    <li><span class="button disabled">Teaching &amp; mentorship &middot; coming soon</span></li>
-</ul>
-
 ## <span class="badge fa-flask"></span>Research
 <span class="image right square">
     <img src="{{ site.baseurl }}/assets/images/eht.png" alt="Event Horizon Telescope image of the black hole in M87" />
@@ -55,7 +50,7 @@ I have a secondary interest in galaxy evolution, specifically in models for feed
     <li><span class="button disabled">Galaxy research &middot; coming soon</span></li>
 </ul>
 
-## <span class="badge fa-microphone"></span>Outreach
+## <span class="badge fa-microphone"></span>Outreach & Teaching
 <span class="image right">
     <img src="{{ site.baseurl }}/assets/images/DunlapWorkshop.jpg" alt="Alicia leading a workshop for science educators at the Dunlap Institute" />
 </span>
@@ -63,8 +58,11 @@ Although I gave up teaching, my interest in sharing my passion for physics and a
 
 Most notably, I love to yap.  I have given many outreach talks on a variety of subjects to a variety of audiences.  I have had the pleasure to give lectures in big auditoriums to the general public, run workshops for science educators, and participate in K-12 classroom visits.  I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/).
 
+<!-- TODO: a sentence or two on your teaching, supervision and mentorship (TA work, supervised students, mentorship programs) -->
+
 <ul class="actions">
     <li><a href="{{ site.baseurl }}/outreach.html" class="button icon fa-arrow-right">Outreach</a></li>
+    <li><a href="{{ site.baseurl }}/teaching.html" class="button icon fa-arrow-right">Teaching &amp; mentorship</a></li>
 </ul>
 
 ## <span class="badge fa-paw"></span>Offline

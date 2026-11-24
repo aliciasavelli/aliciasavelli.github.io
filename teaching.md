@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Teaching & Mentorship
-description: Coming soon     # change to e.g. "Courses, students and mentoring" when the page is ready
+description: Courses, students and mentoring
 image: assets/images/TeachingLecture.jpg
 banner_focus: 55% 25%        # which part of the photo stays in view (horizontal, vertical)
 banner_center: true
@@ -12,7 +12,6 @@ show_tile: true
 tile_icon: fa-pencil         # badge on the home-page tile
 tile_accent: accent6         # tile colour on the home page (accent1-6)
 tile_order: 5                # position of the tile on the home page
-coming_soon: true            # tile says "Coming soon" and isn't clickable; delete this line when the page is ready
 ---
 
 <!--
