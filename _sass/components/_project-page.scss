@@ -82,6 +82,9 @@
 		margin: 0.25em 0 1em 0;
 		padding: 0.6em 1em;
 		text-align: center;
+
+		// Typeset equations (LaTeX, Latin Modern) saved as white SVGs; width set inline in em.
+		img { display: inline-block; height: auto; max-width: 100%; vertical-align: middle; }
 	}
 
 

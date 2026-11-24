@@ -44,7 +44,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>We develop, from first principles, a <strong>subgrid model for collisionless relativistic radiative reconnection</strong> in relativistic resistive MHD (RRMHD). Systematically derived energy and momentum sinks capture the inverse Compton (IC; <a href="https://arxiv.org/abs/2611.28035">Paper I</a>) and synchrotron (Paper II) radiative losses, and they are coupled with a localized, charge-starved resistivity that reproduces the non-ideal electric field, and hence the fast reconnection rate, of kinetic simulations. Benchmarked against radiative PIC simulations in identical set-ups, our RRMHD model recovers the <strong>reconnection rate, the temperature in the reconnection layer, and the bulk motion energy distribution</strong> of the outflow in every cooling regime, with a one-to-one mapping of cooling strengths from PIC to RRMHD. Test particles pushed through the RRMHD fields also recover the <strong>non-thermal tail</strong> of the PIC spectrum.</p></div>
 </div>
 		</div>
 	</div>
@@ -67,14 +67,14 @@ show_tile: false
 </div>
 </div>
 <div class="fig-block">
-<figure class="paper-figure right">
+<figure class="paper-figure right plain">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-corona-sheet.jpg" alt="Global simulation of a luminous accreting black hole, zooming in to a current sheet with plasmoids and X-points near the black hole" />
 	<figcaption>A current sheet forming near the black hole in a global simulation of a luminous X-ray binary: the putative corona. Credit: G. Musoke et al. (2026, in prep.)</figcaption>
 </figure>
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>Reconnection in high-energy sources commonly occurs in the <strong>relativistic regime</strong>, where the upstream magnetic energy density far exceeds the plasma rest-mass energy density (<i>&sigma;</i><sub>0</sub> &equiv; <i>B</i><sub>0</sub><sup>2</sup>/4&pi;<i>&rho;</i><sub>0</sub><i>c</i><sup>2</sup> &#8811; 1), driving efficient non-thermal particle acceleration. It is frequently accompanied by <strong>rapid radiative cooling</strong> that competes against the acceleration. A prominent candidate for relativistic radiative reconnection is the <strong>black hole corona</strong>, the hot plasma of moderate optical depth near the event horizon of luminous accreting black holes, where reconnection has been proposed to energize the plasma and power the hard X-ray emission. These hard X-rays, seen for example in the hard state of Cyg X-1 (below), are believed to come from Comptonization of soft seed photons by mildly relativistic hot electrons (<i>k</i><sub>B</sub><i>T</i><sub>e</sub> &sim; 100 keV) as well as by the bulk plasma flow. Large-scale reconnecting current sheets form within the putative coronal region in global GRMHD simulations, as shown here (G. Musoke et al., in prep.).</p></div>
 </div>
 </div>
 <figure class="paper-figure plain narrow" data-show-for="astronomer plasma">
@@ -90,7 +90,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>Global GRMHD simulations lack essential microphysics of collisionless reconnection, namely a fast reconnection rate and physically informed models for the plasma&ndash;radiation interaction. Kinetic PIC simulations capture that microphysics but are limited to a local reconnection layer. We therefore add a radiative cooling model to RRMHD and benchmark it against ground-truth PIC simulations of a local reconnection layer in identical conditions. As a first step, we work with a pair plasma in the optically thin regime, in a uniform, isotropic background radiation field <i>u</i><sub>rad</sub>.</p></div>
 </div>
 <figure class="paper-figure plain" data-show-for="student astronomer">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-compton.png" alt="A reconnecting current sheet. In the hot X-point, electrons moving in random directions upscatter photons (inverse Compton); in the fast plasmoids, electrons moving together upscatter photons (bulk Comptonization). The losses depend on temperature squared and speed squared." />
@@ -103,7 +103,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="equation"><i>F</i><sub>IC</sub> = &minus;<sup>4</sup>&frasl;<sub>3</sub> <i>&sigma;</i><sub>T</sub><i>u</i><sub>rad</sub><i>&gamma;</i><sup>2</sup><b><i>&beta;</i></b>, &nbsp; <i>e&beta;</i><sub>rec</sub><i>B</i><sub>0</sub> = <sup>4</sup>&frasl;<sub>3</sub> <i>&sigma;</i><sub>T</sub><i>u</i><sub>rad</sub><i>&gamma;</i><sub>rad</sub><sup>2</sup></div><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><div class="equation"><img src="{{ site.baseurl }}/assets/images/plasma/mrc-eq-pic.svg" style="width: 13.73em" alt="F_IC = minus m_e c squared beta_rec sigma_0 over Delta, times (gamma over gamma_rad) squared, times beta" /></div><p>Particles travel through a photon bath of energy density <i>u</i><sub>rad</sub>, and IC losses enter as a <strong>radiative drag force</strong> subtracted from the Lorentz force. Balancing the drag against the reconnection electric field <i>E</i><sub>rec</sub> = <i>&beta;</i><sub>rec</sub><i>B</i><sub>0</sub> defines the <strong>characteristic Lorentz factor <i>&gamma;</i><sub>rad</sub></strong>, at which all the energy from reconnection goes into radiation, so a smaller <i>&gamma;</i><sub>rad</sub> means stronger cooling. Together with the layer half-thickness &Delta; (the hot Larmor radius), <i>&gamma;</i><sub>rad</sub> fully sets the radiative regime.</p></div>
 </div>
 </div>
 <div class="output-card">
@@ -113,7 +113,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="equation">&nabla;<sub><i>&nu;</i></sub><i>T</i><sup><i>&mu;&nu;</i></sup> = <i>S</i><sup><i>&mu;</i></sup>/<i>c</i>, &nbsp; <i>S</i><sup><i>&mu;</i></sup> = <i>S</i><sup><i>&mu;</i></sup>(<i>&Theta;</i><sup>2</sup>, <i>&beta;</i><sub>&Gamma;</sub><sup>2</sup>), &nbsp; <i>&gamma;</i><sub>rad</sub><sup>2</sup> &rarr; 12<i>&Theta;</i><sub>rad</sub><sup>2</sup></div><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><div class="equation"><img src="{{ site.baseurl }}/assets/images/plasma/mrc-eq-mhd.svg" style="width: 23.66em" alt="Energy-momentum equation with the radiative sink S^mu, and the energy and momentum sinks S^0 and S^i of Paper I, Eqs. 11 and 12" /></div><p>In a fluid model, radiative losses become a <strong>sink <i>S</i><sup><i>&mu;</i></sup> in the energy and momentum equations</strong>. Following <a href="https://doi.org/10.1088/0004-637X/809/1/23">Golan &amp; Levinson (2015)</a>, we average over the boosted electron (Maxwell&ndash;J&uuml;ttner) and photon distributions, so that the individual particle motions translate into a dimensionless temperature <i>&Theta;</i> = <i>k</i><sub>B</sub><i>T</i>/<i>m</i><sub>e</sub><i>c</i><sup>2</sup> and a bulk four-velocity <i>&Gamma;&beta;</i><sub>&Gamma;</sub>. The <i>&Theta;</i><sup>2</sup> terms capture IC scattering in the hot X-points, and the <i>&Gamma;</i><sup>2</sup><i>&beta;</i><sub>&Gamma;</sub><sup>2</sup> term captures bulk Comptonization on the fast plasmoids.</p></div>
 </div>
 </div>
 </div>
@@ -125,11 +125,12 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="equation"><i>&eta;</i><sub>eff</sub> = |<b>E</b>*| / |<b>J</b>|, &nbsp; |<b>J</b>| &asymp; 2<i>n</i><sub>e</sub><i>ec</i> &nbsp;&rArr;&nbsp; <i>&beta;</i><sub>rec</sub> &asymp; 0.1, &nbsp; &Delta; &asymp; &radic;<i>&sigma;</i><sub>0</sub> <i>&lambda;</i><sub>e</sub></div><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>In relativistic reconnection, the diffusion regions around the X-points approach <strong>charge starvation</strong>: the current density nears the maximum the available charges can carry, &#124;<b>J</b>&#124; &asymp; 2<i>n</i><sub>e</sub><i>ec</i> (<a href="https://doi.org/10.3847/2041-8213/ada158">Moran et al. 2025</a>). In RRMHD, we capture this with a localized, effective resistivity <i>&eta;</i><sub>eff</sub> = &#124;<b>E</b><sup>&#42;</sup>&#124;/&#124;<b>J</b>&#124;, which introduces an effective skin depth <i>&lambda;</i><sub>e</sub> and recovers the kinetic non-ideal electric field <b>E</b><sup>&#42;</sup>, and hence the fast reconnection rate (<a href="https://arxiv.org/abs/2601.02460">Ripperda et al. 2026</a>). This skin depth sets the layer half-thickness, &Delta; &sim; &radic;<i>&sigma;</i><sub>0</sub>&thinsp;<i>&lambda;</i><sub>e</sub>, so the fluid and kinetic layers share both &Delta; and the reconnection electric field <i>E</i><sub>rec</sub> = <i>&beta;</i><sub>rec</sub><i>B</i><sub>0</sub>; the same force balance then defines the cooling strength in both models, giving a one-to-one mapping <i>&gamma;</i><sub>rad</sub><sup>2</sup> &rarr; 12<i>&Theta;</i><sub>rad</sub><sup>2</sup> for a thermal distribution.</p></div>
 </div>
 </div>
 </div>
 <div data-show-for="plasma" hidden>
+<p>We define four cooling regimes by comparing the cooling time <i>t</i><sub>IC</sub>, set by <i>&gamma;</i><sub>rad</sub>, with two crossing times: that of a diffusion region, <i>t</i><sub>D</sub>, and that of the whole layer by the outflow, <i>t</i><sub>adv</sub> (<a href="https://doi.org/10.3847/1538-4357/aba622">Sironi &amp; Beloborodov 2020</a>).</p>
 <table class="mini-table regimes">
 	<thead><tr><th>Cooling regime</th><th>Cooling time</th><th>Condition</th><th>Our runs</th><th>Where it happens</th></tr></thead>
 	<tbody>
@@ -163,7 +164,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>For all cooling regimes, our RRMHD model reproduces the <strong>overall morphology of the reconnection layer</strong> and the typical magnitudes of the bulk speed, temperature, and density in the sheet. Our model also recovers the kinetic reconnection rate and the Alfv&eacute;nic outflow; cooling has a negligible effect on both.</p></div>
 </div>
 <div data-show-for="astronomer plasma">
 <figure class="paper-figure plain" data-show-for="astronomer">
@@ -176,12 +177,20 @@ show_tile: false
 </figure>
 <div class="levels">
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>The most quantitative comparison is in the <strong>energy spectra</strong> of the reconnection layer: we compare both the total kinetic energy spectrum (found in RRMHD via a per-cell drifting Maxwellian) and the bulk motion energy spectrum. The spectra show good agreement in temperature and outflow; however, RRMHD by itself does not capture the kinetic non-thermal tail (see below).</p></div>
 </div>
 </div>
 <div data-show-for="plasma" hidden>
+<span class="subhead">Synchrotron cooling and test particles</span>
+<p>In Paper II, led by Ma&euml;lle Magnan, we extend our model to <strong>synchrotron cooling</strong>. Balancing the reconnection electric field against synchrotron losses defines <i>&gamma;</i><sub>sync</sub>, analogous to <i>&gamma;</i><sub>rad</sub>. The addition of <strong>test particles</strong> pushed by the RRMHD fields is able to capture the kinetic non-thermal tail.</p>
+<figure class="paper-figure plain">
+	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-plasma.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC nonthermal tail" />
+	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
+</figure>
+</div>
+<div data-show-for="plasma" hidden>
 <span class="subhead">Why the resistivity matters</span>
-<div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Text coming soon</div>
+<p>With the charge-starved resistivity, we capture the fast kinetic reconnection rate (&langle;<i>&beta;</i><sub>rec</sub>&rangle; &asymp; 0.08, compared with 0.02 with uniform resistivity), and the peak in the bulk outflow spectrum. Although the bulk motions still reach the Alfv&eacute;nic <i>&Gamma;</i><sub>A</sub> with uniform resistivity, the peak there is less defined and orders of magnitude less energetic. The reconnection rate sets the aspect ratio of the diffusion regions, and thus the field-line tension that drives the outflow. Matching the kinetic rate is therefore essential to capture the bulk motions, and hence bulk Comptonization, which neither a uniform resistivity nor ideal GRMHD with numerical resistivity can do.</p>
 <figure class="paper-figure plain">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-fig5-plasma.png" alt="Fig. 5 of Paper I: reconnection rate and bulk-motion spectrum with uniform and charge-starved resistivity" />
 	<figcaption>Adapted from Fig. 5 of Paper I.</figcaption>
@@ -196,7 +205,7 @@ show_tile: false
 <div class="levels">
 	<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 	<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
-	<div data-level="plasma" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Plasma astrophysicist version coming soon</div></div>
+	<div data-level="plasma" hidden><p>Now that the model has been validated against kinetic theory, it can be applied to <strong>global resistive GRMHD simulations of black hole accretion</strong>, where reconnection sites form self-consistently. I will also extend the model to include more physics: (1) <strong>two-temperature RRMHD</strong>, pairing our cooling with Ohmic heating of electrons and ions; (2) <strong>M1 radiation transport</strong>, replacing the uniform, isotropic <i>u</i><sub>rad</sub> with a photon field that evolves in time and space and exchanges energy and momentum with the plasma, as needed in more optically thick regimes; and (3) <strong>pair production</strong> and annihilation.</p></div>
 </div>
 	</div>
 </section>
