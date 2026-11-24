@@ -54,7 +54,7 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 				<h3><span class="badge">2</span>Star formation histories across cosmological simulations <span class="tag">Submitted</span></h3>
 				<p>TODO: a short description of this project.</p>
 				<ul class="actions">
-					<li><a href="https://arxiv.org/abs/2610.17359" class="button icon fa-arrow-right">Read on arXiv</a></li>
+					<li><a href="https://arxiv.org/abs/2610.17359" class="button icon fa-arrow-right">Read the paper</a></li>
 				</ul>
 			</div>
 		</article>
