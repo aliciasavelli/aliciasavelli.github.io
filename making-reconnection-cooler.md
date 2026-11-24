@@ -208,7 +208,7 @@ show_tile: false
 				<span class="output-kind">Paper I &middot; Inverse Compton &middot; Submitted to ApJL</span>
 				<h3>Making Reconnection Cooler: A relativistic resistive magnetohydrodynamics model for radiative collisionless reconnection</h3>
 				<p class="output-meta"><strong>A. M. Savelli</strong>, D. Gro&scaron;elj, B. Ripperda, A. Levinson, A. Philippov &amp; N. Murray</p>
-				<ul class="actions"><li><a href="https://github.com/aliciasavelli/Radiative-Reconnection/blob/main/Making_Reconnection_Cooler.pdf" class="button small icon fa-arrow-right">Read the paper</a></li></ul>
+				<ul class="actions"><li><a href="https://arxiv.org/abs/2611.28035" class="button small icon fa-arrow-right">Read on arXiv</a></li></ul>
 			</div>
 			<div class="output-card">
 				<!-- TODO: replace the Coming soon button with a link when it's out -->
