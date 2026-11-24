@@ -54,11 +54,11 @@ I have a secondary interest in galaxy evolution, specifically in models for feed
 <span class="image right">
     <img src="{{ site.baseurl }}/assets/images/DunlapWorkshop.jpg" alt="Alicia leading a workshop for science educators at the Dunlap Institute" />
 </span>
-Although I gave up teaching, my interest in sharing my passion for physics and astronomy with anyone who will listen remains.  I believe science should be accessible to everyone, and want to help bridge the gap between the jargony science and language that anyone at any level can understand. I want to empower both the younger generation to feel like science is exciting and fun and something they can do themselves, as well as the older generation who didn't go into science but may still have an interest (just ask my dad).
+Although I gave up classroom teaching, my interest in sharing my passion for physics and astronomy with anyone who will listen remains. I believe science should be accessible to everyone, and want to help bridge the gap between jargony explanations and language that anyone at any level can understand. I want to empower both the younger generation to feel like science is exciting and fun and something they can do themselves, as well as the older generation who didn’t go into science but may still have an interest (just ask my dad).
 
-Most notably, I love to yap.  I have given many outreach talks on a variety of subjects to a variety of audiences.  I have had the pleasure to give lectures in big auditoriums to the general public, run workshops for science educators, and participate in K-12 classroom visits.  I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/).
+Most notably, I love to yap. I have given many outreach talks on a variety of subjects to a variety of audiences. I have had the pleasure of giving lectures in big auditoriums to the general public, run workshops for science educators, and participate in K-12 classroom visits. I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/).
 
-<!-- TODO: a sentence or two on your teaching, supervision and mentorship (TA work, supervised students, mentorship programs) -->
+I am also proud to have a direct hand in training the next generation of scientists through my history in student supervision, mentorship, and teaching assistantships.
 
 <ul class="actions">
     <li><a href="{{ site.baseurl }}/outreach.html" class="button icon fa-arrow-right">Outreach</a></li>
