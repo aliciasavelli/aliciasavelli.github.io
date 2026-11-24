@@ -5,10 +5,12 @@
 {% endif %}
 <!-- Page tiles. Each page with show_tile: true gets a tile, in the order of tile_order, coloured by its
      tile_accent (accent1-6); tile_icon (e.g. fa-magnet) adds a badge to the title.
-     Pages with coming_soon: true get a tile that isn't clickable yet. -->
+     Pages with coming_soon: true get a tile that isn't clickable yet.
+     tile_wide: true makes a tile span the full width. On computers the tiles are placed by tile_desktop_order
+     (if set, otherwise tile_order); on phones they stack in tile_order. -->
 <section id="one" class="tiles home-tiles cute">
   {% for tile in tiles limit:site.tiles-count %}
-  <article class="{{ tile.tile_accent }}{% if tile.coming_soon %} coming-soon{% endif %}">
+  <article class="{{ tile.tile_accent }}{% if tile.coming_soon %} coming-soon{% endif %}{% if tile.tile_wide %} wide{% endif %}" style="--desktop-order: {{ tile.tile_desktop_order | default: tile.tile_order }};">
     <span class="image">
       <img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}" />
     </span>

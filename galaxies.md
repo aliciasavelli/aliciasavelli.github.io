@@ -11,6 +11,7 @@ show_tile: true
 tile_icon: fa-star           # badge on the home-page tile
 tile_accent: accent4         # tile colour on the home page (accent1-6)
 tile_order: 3                # position of the tile on the home page
+tile_desktop_order: 2        # on computers: next to About, above the wide Plasma tile (on phones it stays 3rd)
 coming_soon: true            # tile says "Coming soon" and isn't clickable; delete this line when the page is ready
 ---
 

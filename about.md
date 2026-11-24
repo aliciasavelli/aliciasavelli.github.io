@@ -30,6 +30,11 @@ I'm currently a **PhD candidate** in the David A. Dunlap Department of Astronomy
 </span>
 I completed my undergraduate education at Brock University, where I received my **B.Sc. in Mathematics (Honours) with minor in Physics** and my **B.Ed. with Intermediate/Senior qualifications** together in 2019.  I was then a secondary maths teacher at **Wembley High Technology College** in London, UK for the 2019 academic year.  While I found teaching incredibly rewarding, I missed working out problems myself, so I returned to Brock in 2020 to upgrade my Physics minor, earning me a **B.Sc. in Physics (Honours)** in 2022.  I then entered the graduate program at the University of Toronto, where I am completing my thesis *Multiwavelength emission from Active Galactic Nuclei* under Profs. Bart Ripperda and Norman Murray, expecting to graduate in Summer 2027.  
 
+<!-- When the teaching page is ready, swap the span for: <a href="{{ site.baseurl }}/teaching.html" class="button icon fa-arrow-right">Teaching &amp; mentorship</a> -->
+<ul class="actions">
+    <li><span class="button disabled">Teaching &amp; mentorship &middot; coming soon</span></li>
+</ul>
+
 ## <span class="badge fa-flask"></span>Research
 <span class="image right square">
     <img src="{{ site.baseurl }}/assets/images/eht.png" alt="Event Horizon Telescope image of the black hole in M87" />

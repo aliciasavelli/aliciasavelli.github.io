@@ -67,10 +67,16 @@
 		gap: 1.75em;
 		padding: 2.5em 2.5em 0.5em 2.5em;
 
+		// The .cute clearfix would count as a flex item and leave a gap after an odd last tile.
+		&:after { display: none; }
+
 		article {
 			border-radius: 18px;
 			flex: 1 1 calc(50% - 0.875em) !important;
+			order: var(--desktop-order, 0);
 			width: auto !important;
+
+			&.wide { flex-basis: 100% !important; }
 
 			@for $i from 1 through 6 {
 				&.accent#{$i} { --accent: #{_palette(accent#{$i})}; }
@@ -111,5 +117,7 @@
 		@include breakpoint(xsmall) {
 			display: flex;   // the theme switches to block on phones, which drops the gap
 			flex-direction: column;
+
+			article { order: 0; }   // phones: one column in tile_order
 		}
 	}
