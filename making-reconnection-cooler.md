@@ -136,7 +136,7 @@ show_tile: false
 	<tbody>
 		<tr><td>Strong</td><td>\(t_{\rm IC} \lesssim t_{\rm D}\)</td><td>\(\gamma_{\rm rad}^2 \lesssim \sigma_0^2\)</td><td>\(\gamma_{\rm rad} = 10\)&ndash;15</td><td>Pulsar and M87&#42; current sheets</td></tr>
 		<tr><td>Moderate</td><td>\(t_{\rm D} \ll t_{\rm IC} \ll t_{\rm adv}\)</td><td>\(\sigma_0^2 \ll \gamma_{\rm rad}^2 \ll \beta_{\rm rec}L\sigma_0/\Delta\)</td><td>17&ndash;32</td><td>Black hole coronae, GRB jets</td></tr>
-		<tr><td>Weak</td><td>\(t_{\rm IC} \gg t_{\rm adv}\)</td><td>\(\gamma_{\rm rad}^2 \gg \beta_{\rm rec}L\sigma_0/\Delta\)</td><td>60</td><td>FSRQ jets</td></tr>
+		<tr><td>Weak</td><td>\(t_{\rm IC} \gg t_{\rm adv}\)</td><td>\(\gamma_{\rm rad}^2 \gg \beta_{\rm rec}L\sigma_0/\Delta\)</td><td>60</td><td>Quasar jets</td></tr>
 		<tr><td>None</td><td>\(t_{\rm IC} \to \infty\)</td><td>\(\gamma_{\rm rad} \to \infty\)</td><td>\(\infty\)</td><td>&mdash;</td></tr>
 	</tbody>
 </table>
