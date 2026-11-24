@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Teaching & Mentorship
-description: Courses, students and mentoring
+description: Pedagogy & service
 image: assets/images/TeachingLecture.jpg
 banner_focus: 55% 25%        # which part of the photo stays in view (horizontal, vertical)
 banner_center: true

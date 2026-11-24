@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Outreach
-description: Talks, workshops and events
+description: Talks & roles
 image: assets/images/AstroOnTap.jpg
 banner_center: true
 banner_overlay: 0.35
