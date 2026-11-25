@@ -62,7 +62,7 @@ Although I gave up classroom teaching, my interest in **sharing my passion for p
 </ul>
 
 ## <span class="badge fa-paw"></span>Offline
-Outside of science, I love to read (my favourite books are *Project Hail Mary* and *The Book Thief*) and bake.  I play a few instruments and have participated in several bands; currently I am a **clarinetist** in the [Toronto Concert Band](https://torontoconcertband.com/).  I am also a **huge Swiftie**!  I love to go outside and have recently become a fan of **backpacking and camping**.  More than anything, I am obsessed with **my cat, Charlotte**.  
+Outside of science, I love to read (my favourite books are *Project Hail Mary* and *The Book Thief*) and bake.  I play a few instruments and have participated in several bands; currently I am a **clarinetist** in the [Toronto Concert Band](https://torontoconcertband.com/).  I am also a **huge Swiftie**!  I love to go outside and have recently become a fan of **backpacking and camping**.  More than anything, I am obsessed with my cat, **Charlotte**.  
 
 <!-- Polaroid photo row: all photos are shown at the same height, slightly tilted.
      Set --ar on each to the photo's width / height; the note is the handwritten caption (can be left empty). -->

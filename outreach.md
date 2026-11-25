@@ -28,7 +28,7 @@ tile_order: 4                # position of the tile on the home page
 <div class="intro tinted" markdown="1">
 I believe **science should be accessible to everyone**, and want to help bridge the gap between jargony explanations and language that anyone at any level can understand. I want to empower both the younger generation to feel like science is exciting and fun and something they can do themselves, as well as the older generation who didn’t go into science but may still have an interest (just ask my dad).
 
-If you're interested in collaborating or hosting me as a speaker, [please get in touch](#get-in-touch){: .scrolly}!
+If you're interested in collaborating or hosting me as a speaker, **[please get in touch](#get-in-touch){: .scrolly}**!
 </div>
 
 ## <span class="badge fa-bullhorn"></span>Public talks
@@ -75,9 +75,7 @@ Our resources extend beyond the classroom and have ties to subjects outside astr
 <span class="image left">
     <img src="{{ site.baseurl }}/assets/images/AstroToursTeam.jpg" alt="Group photo of the AstroTours outreach team" />
 </span>
-Outreach is a team effort, and I have had the fortune of working on or leading several initiatives, gaining experience in leading a team and organizing complex events.  I led the **2023 AstroTours Keynote** event featuring famous science communicator [Dr. Katie Mack](https://www.astrokatie.com/) and several activities including an array of astronomy demos, telescope viewing, lab tours, planetarium talks, and a book signing with Dr. Mack, marking our **biggest event to-date** with over 400 guests; I then **co-led the entire AstroTours series** the following year.  I also served as **Curriculum Lead for [Coding the Cosmos](https://github.com/Coding-the-Cosmos)**, a grad student-led astronomy and coding summer camp for underprivileged high school students.  Through programs like [Adventures in Science](https://www.uoftmedsoc.com/clubscommunity/adventures-in-science-%28ais%29-stg) and [Scientifically Yours](https://brocku.ca/mathematics-science/scientificallyyours/), I have also directly led teams of high school students working on gaining a deeper understanding of a scientific concept.
-
-I'm also a **regular [science fair](https://www.basef.ca/) judge**, which is one of my favourite events of the year; speaking one-on-one with curious and passionate students always fuels my own excitement for science.
+Outreach is a team effort, and I have had the fortune of working on or leading several initiatives, gaining experience in leading a team and organizing complex events.  I led the **2023 AstroTours Keynote** event featuring famous science communicator [Dr. Katie Mack](https://www.astrokatie.com/) and several activities including an array of astronomy demos, telescope viewing, lab tours, planetarium talks, and a book signing with Dr. Mack, marking our **biggest event to-date** with over 400 guests; I then **co-led the entire AstroTours series** the following year.  I also served as **Curriculum Lead for [Coding the Cosmos](https://github.com/Coding-the-Cosmos)**, a grad student-led astronomy and coding summer camp for underprivileged high school students.  Through programs like [Adventures in Science](https://www.uoftmedsoc.com/clubscommunity/adventures-in-science-%28ais%29-stg) and [Scientifically Yours](https://brocku.ca/mathematics-science/scientificallyyours/), I have also directly led teams of high school students working on gaining a deeper understanding of a scientific concept. I'm also a **regular [science fair](https://www.basef.ca/) judge**, which is one of my favourite events of the year; speaking one-on-one with curious and passionate students always fuels my own excitement for science.
 
 </div>
 </section>
