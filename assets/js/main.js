@@ -156,8 +156,11 @@
 
 				// Image.
 
-					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
+					// Set image (currentSrc = the phone or computer version the browser picked from <picture>;
+					// re-applied whenever the browser switches).
+						var setTile = function() { $this.css('background-image', 'url(' + ($img[0].currentSrc || $img.attr('src')) + ')'); };
+						if ($img[0].complete || !('currentSrc' in $img[0])) setTile();
+						$img.on('load', setTile);
 
 					// Set position.
 						if (x = $img.data('position'))
