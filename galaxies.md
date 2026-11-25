@@ -49,12 +49,12 @@ tile_desktop_order: 2        # on computers: next to About, above the wide Plasm
 <section id="two">
 	<div class="inner projects cute">
 		<article class="project accent4">
-			<a href="{{ site.baseurl }}/sf-r-you-sure.html" class="media">
+			<span class="media">
 				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues-poster.jpg" aria-label="Animation of galaxies growing over the last 10 billion years: galaxies that look like the Milky Way are circled, two later drop out as quenched and too blue, and only one is a true Milky Way analogue today, where it is replaced by an image of the Milky Way; time then rewinds">
 					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.mp4" type="video/mp4" />
 					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.webm" type="video/webm" />
 				</video>
-			</a>
+			</span>
 			<div class="body">
 				<h3><span class="badge">1</span>SF-R You Sure?</h3>
 				<div class="levels">
@@ -66,17 +66,17 @@ tile_desktop_order: 2        # on computers: next to About, above the wide Plasm
 					</div>
 				</div>
 				<ul class="actions">
-					<li><a href="{{ site.baseurl }}/sf-r-you-sure.html" class="button icon fa-arrow-right">Learn more</a></li>
+					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
 		</article>
 		<article class="project accent4">
-			<a href="{{ site.baseurl }}/star-formation-histories.html" class="media">
+			<span class="media">
 				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories-poster.jpg" aria-label="Animation of five supercomputers, one per simulation, drawing star formation histories through cosmic time: two shapes are made by every simulation, while the others are made by only one or two">
 					<source src="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories.mp4" type="video/mp4" />
 					<source src="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories.webm" type="video/webm" />
 				</video>
-			</a>
+			</span>
 			<div class="body">
 				<h3><span class="badge">2</span>Star formation histories across cosmological simulations</h3>
 				<div class="levels">
@@ -88,7 +88,7 @@ tile_desktop_order: 2        # on computers: next to About, above the wide Plasm
 					</div>
 				</div>
 				<ul class="actions">
-					<li><a href="{{ site.baseurl }}/star-formation-histories.html" class="button icon fa-arrow-right">Learn more</a></li>
+					<li><span class="button disabled">Coming soon</span></li>
 				</ul>
 			</div>
 		</article>
