@@ -79,7 +79,7 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 				</video>
 			</a>
 			<div class="body">
-				<h3><span class="badge">2</span>Star formation histories across cosmological simulations <span class="tag">Submitted</span></h3>
+				<h3><span class="badge">2</span>Star formation histories across cosmological simulations</h3>
 				<div class="levels">
 					<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
 					<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
