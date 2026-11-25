@@ -44,10 +44,9 @@ My primary research interests lie in the **extreme plasma processes** occurring 
 </span>
 I have a secondary interest in **galaxy evolution**, specifically in models for feedback from black holes or stars in cosmological simulations.  I have used **Milky Way analogues** -- galaxies similar to our own -- as a test subject to understand how the physics going into these models may have led to different evolution pathways for the Milky Way.  
 
-<!-- When the galaxy page is ready, swap the span for: <a href="{{ site.baseurl }}/galaxies.html" class="button icon fa-arrow-right">Galaxy research</a> -->
 <ul class="actions">
     <li><a href="{{ site.baseurl }}/plasma.html" class="button icon fa-arrow-right">Plasma research</a></li>
-    <li><span class="button disabled">Galaxy research &middot; coming soon</span></li>
+    <li><a href="{{ site.baseurl }}/galaxies.html" class="button icon fa-arrow-right">Galaxy research</a></li>
 </ul>
 
 ## <span class="badge fa-microphone"></span>Outreach & Teaching
