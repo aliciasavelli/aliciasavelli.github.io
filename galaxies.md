@@ -2,7 +2,8 @@
 layout: landing
 title: Galaxy Research
 description: Coming soon     # change to e.g. "Highlighted projects" when the page is ready
-image: assets/images/galaxy.png          # TODO: also on the About page (Research section) and low resolution - use a different picture
+image: assets/images/galaxies/galaxies-banner.jpg   # banner: top MWAs from Fig. 3 of the MWA paper, EAGLE and TNG in a checkerboard
+tile_image: assets/images/galaxies/galaxies-tile.jpg   # home-page tile: the same galaxies in a 3x2 grid
 banner_center: true
 banner_overlay: 0.35
 banner_style: 4              # banner tint colour: 4 = gold (accent4), the colour of this page's home tile
