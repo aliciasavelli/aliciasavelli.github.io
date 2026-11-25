@@ -18,7 +18,14 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <!--
   GALAXY RESEARCH PAGE: same layout as plasma.md.
   Everything marked TODO (and every "coming soon" box) is a placeholder to fill in.
-  To add the reading-level toggle later, copy the .level-toggle block and the .levels markup from plasma.md.
+  READING-LEVEL TOGGLE (Student / Astronomer; assets/js/levels.js, styles in _sass/components/_levels.scss):
+  each <div class="levels"> block holds one version per level:
+      <div data-level="student" hidden> ... </div>
+      <div data-level="astronomer" data-default> ... </div>   (shown if a level has no version)
+  Replace each "coming soon" box with your text, e.g.
+      <div data-level="student" hidden><p>Your text, with <strong>key words</strong> in bold.</p></div>
+  (The choice is shared with the plasma pages; a visitor who picked "Plasma astrophysicist"
+  there sees the Astronomer version here.)
 -->
 
 <!-- Main -->
@@ -28,8 +35,17 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <section id="one">
 	<div class="inner cute accent4">
 		<h2><span class="badge fa-star"></span>Galaxy evolution in cosmological simulations</h2>
-		<!-- TODO: replace this placeholder with <div class="intro tinted"><p>Your introduction, with <strong>key words</strong> in bold.</p></div> -->
-		<div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Introduction coming soon</div>
+		<div class="level-toggle" hidden>
+			<span class="level-toggle-label">Written for</span>
+			<ul class="actions">
+				<li><button type="button" class="button small" data-set-level="student">Student</button></li>
+				<li><button type="button" class="button small" data-set-level="astronomer">Astronomer</button></li>
+			</ul>
+		</div>
+		<div class="levels intro">
+			<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student introduction coming soon</div></div>
+			<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer introduction coming soon</div></div>
+		</div>
 		<p>Here I highlight some selected first-author projects from my galaxy evolution research.</p>
 	</div>
 </section>
@@ -38,28 +54,38 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <section id="two">
 	<div class="inner projects cute">
 		<article class="project accent4">
-			<span class="media">
+			<a href="{{ site.baseurl }}/sf-r-you-sure.html" class="media">
 				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues-poster.jpg" aria-label="Animation of galaxies growing over the last 10 billion years: galaxies that look like the Milky Way are circled, two later drop out as quenched and too blue, and only one is a true Milky Way analogue today, where it is replaced by an image of the Milky Way; time then rewinds">
 					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.mp4" type="video/mp4" />
 					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.webm" type="video/webm" />
 				</video>
-			</span>
+			</a>
 			<div class="body">
 				<h3><span class="badge">1</span>SF-R You Sure?</h3>
-				<p>TODO: a short description of this project.</p>
+				<div class="levels">
+					<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
+					<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
+				</div>
 				<ul class="actions">
-					<li><a href="https://iopscience.iop.org/article/10.3847/1538-4357/adc38c" class="button icon fa-arrow-right">Read the paper</a></li>
+					<li><a href="{{ site.baseurl }}/sf-r-you-sure.html" class="button icon fa-arrow-right">Learn more</a></li>
 				</ul>
 			</div>
 		</article>
 		<article class="project accent4">
-			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
-			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<a href="{{ site.baseurl }}/star-formation-histories.html" class="media">
+				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories-poster.jpg" aria-label="Animation of five supercomputers, one per simulation, drawing star formation histories through cosmic time: two shapes are made by every simulation, while the others are made by only one or two">
+					<source src="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories.mp4" type="video/mp4" />
+					<source src="{{ site.baseurl }}/assets/images/galaxies/star-formation-histories.webm" type="video/webm" />
+				</video>
+			</a>
 			<div class="body">
 				<h3><span class="badge">2</span>Star formation histories across cosmological simulations <span class="tag">Submitted</span></h3>
-				<p>TODO: a short description of this project.</p>
+				<div class="levels">
+					<div data-level="student" hidden><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Student version coming soon</div></div>
+					<div data-level="astronomer" data-default><div class="intro placeholder"><span class="fa fa-hourglass-half"></span>Astronomer version coming soon</div></div>
+				</div>
 				<ul class="actions">
-					<li><a href="https://arxiv.org/abs/2610.17359" class="button icon fa-arrow-right">Read the paper</a></li>
+					<li><a href="{{ site.baseurl }}/star-formation-histories.html" class="button icon fa-arrow-right">Learn more</a></li>
 				</ul>
 			</div>
 		</article>
@@ -78,3 +104,5 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 </section>
 
 </div>
+
+<script src="{{ site.baseurl }}/assets/js/levels.js"></script>
