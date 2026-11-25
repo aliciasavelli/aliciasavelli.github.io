@@ -117,3 +117,41 @@
 	.output-cards.two-up > .output-card {
 		flex-basis: calc(50% - 0.75em);
 	}
+
+	// Little stat cards under a section (see teaching.md):
+	// <div class="stat-cards"><div class="stat-card"><span class="stat-number">6</span><span class="stat-label">Label</span></div> ...</div>
+	.stat-cards {
+		clear: both;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		margin: 0.5em 0 2.5em 0;
+	}
+
+	.stat-card {
+		background: linear-gradient(160deg,
+			color-mix(in srgb, var(--accent) 14%, transparent),
+			color-mix(in srgb, var(--accent) 4%, transparent));
+		border: solid 1px color-mix(in srgb, var(--accent) 30%, transparent);
+		border-radius: 18px;
+		flex: 1 1 11em;
+		padding: 1.1em 1.4em 1.2em 1.4em;
+
+		.stat-number {
+			color: color-mix(in srgb, var(--accent) 70%, white);
+			display: block;
+			font-size: 2.25em;
+			font-weight: _font(weight-bold);
+			line-height: 1.1;
+		}
+
+		.stat-label {
+			display: block;
+			font-size: 0.75em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			margin-top: 0.5em;
+			opacity: 0.85;
+			text-transform: uppercase;
+		}
+	}
