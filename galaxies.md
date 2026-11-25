@@ -38,8 +38,12 @@ coming_soon: true            # tile says "Coming soon" and isn't clickable; dele
 <section id="two">
 	<div class="inner projects cute">
 		<article class="project accent4">
-			<!-- Figure placeholder: replace this div with <span class="media"><img src="{{ site.baseurl }}/assets/images/..." alt="..." /></span> -->
-			<div class="media placeholder" aria-hidden="true"><span class="fa fa-hourglass-half"></span><span>Figure coming soon</span></div>
+			<span class="media">
+				<video autoplay loop muted playsinline preload="auto" poster="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues-poster.jpg" aria-label="Animation of galaxies growing over the last 10 billion years: galaxies that look like the Milky Way are circled, two later drop out as quenched and too blue, and only one is a true Milky Way analogue today, where it is replaced by an image of the Milky Way; time then rewinds">
+					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.mp4" type="video/mp4" />
+					<source src="{{ site.baseurl }}/assets/images/galaxies/milky-way-analogues.webm" type="video/webm" />
+				</video>
+			</span>
 			<div class="body">
 				<h3><span class="badge">1</span>SF-R You Sure?</h3>
 				<p>TODO: a short description of this project.</p>
