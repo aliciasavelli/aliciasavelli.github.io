@@ -15,7 +15,10 @@
         <section id="banner" class="style{{ page.banner_style | default: 2 }}{% if page.banner_center %} banner-centered{% endif %}"{% if page.banner_overlay %} style="--banner-overlay: {{ page.banner_overlay }};"{% endif %}{% if page.banner_focus %} data-focus="{{ page.banner_focus }}"{% endif %}>
             <div class="inner">
                 <span class="image">
-                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+                    {% if page.banner_image_phone %}<picture>
+                        <source media="(max-width: 736px)" srcset="{{ site.baseurl }}/{{ page.banner_image_phone }}">
+                        <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+                    </picture>{% else %}<img src="{{ site.baseurl }}/{{ page.image }}" alt="">{% endif %}
                 </span>
                 <header class="major">
 

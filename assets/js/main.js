@@ -246,8 +246,11 @@
 				// Image.
 					if ($image.length > 0) {
 
-						// Set image.
-							$this.css('background-image', 'url(' + $img.attr('src') + ')');
+						// Set image (currentSrc = the phone or computer version the browser picked from <picture>;
+						// it is re-applied whenever the browser switches, e.g. when the window is resized).
+							var setBanner = function() { $this.css('background-image', 'url(' + ($img[0].currentSrc || $img.attr('src')) + ')'); };
+							if ($img[0].complete || !('currentSrc' in $img[0])) setBanner();   // already loaded (or an old browser)
+							$img.on('load', setBanner);
 
 						// Hide original.
 							$image.hide();

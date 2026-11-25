@@ -2,10 +2,11 @@
 layout: landing
 title: Plasma Research
 description: Highlighted projects
-image: assets/images/Plasmoids.jpg
+image: assets/images/plasma/plasmoids-banner.jpg   # banner on computers: the two panels of Plasmoids.jpg cropped around their current sheets
+banner_image_phone: assets/images/plasma/plasmoids-banner-phone.jpg   # banner on phones (screens up to 736 px wide), centred on the two big plasmoids
 banner_center: true          # show the middle of the banner image (with a gentle scroll effect)
 banner_overlay: 0.35         # opacity of the purple tint over the banner (theme default 0.85)
-tile_image: 
+tile_image: assets/images/Plasmoids.jpg   # home-page tile keeps the full original picture
 nav-menu: true
 show_tile: true
 tile_icon: fa-magnet            # badge on the home-page card
