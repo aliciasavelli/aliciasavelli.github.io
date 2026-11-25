@@ -12,17 +12,21 @@
 	.about {
 		--accent: #{_palette(accent1)};
 
-		// The About page's colour is blue (accent1, as on its home tile): intro card tint and bold words.
+		// The About page's colour is blue (accent1, as on its home tile): intro card tint.
 		&.inner .intro {
 			background: linear-gradient(135deg, rgba(111, 195, 223, 0.2), rgba(142, 169, 232, 0.1));
-
-			strong { color: #8fd3ea; }   // lightened accent1, like the purple bold words on the plasma page
 		}
 
 		h2:nth-of-type(1), h2:nth-of-type(1) ~ * { --accent: #{_palette(accent1)}; }
 		h2:nth-of-type(2), h2:nth-of-type(2) ~ * { --accent: #{_palette(accent2)}; }
 		h2:nth-of-type(3), h2:nth-of-type(3) ~ * { --accent: #{_palette(accent3)}; }
 		h2:nth-of-type(4), h2:nth-of-type(4) ~ * { --accent: #{_palette(accent4)}; }
+	}
+
+	// Bold words: a lighter version of the colour of the section they are in (--accent), the same on every page.
+	// (:where keeps this easy to override: the plasma page's reading levels set their own bold colour in _levels.scss.)
+	:where(.about, .cute) strong {
+		color: color-mix(in srgb, var(--accent, white) 70%, white);
 	}
 
 	.about, .cute {
@@ -36,8 +40,7 @@
 			padding: 1.5em 1.85em;
 		}
 
-		// Intro card tinted in the page's own colour (class="intro tinted"), with bold words in a
-		// lighter version of it. Used on the galaxy and outreach pages.
+		// Intro card tinted in the page's own colour (class="intro tinted"). Used on the galaxy and outreach pages.
 		.intro.tinted {
 			background: linear-gradient(135deg,
 				color-mix(in srgb, var(--accent) 22%, transparent),
@@ -45,7 +48,6 @@
 
 			margin-bottom: 2em;
 
-			strong { color: color-mix(in srgb, var(--accent) 70%, white); }
 			> p:last-child { margin-bottom: 0; }
 		}
 

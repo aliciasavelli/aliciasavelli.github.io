@@ -35,14 +35,14 @@ I completed my undergraduate education at Brock University, where I received my 
     <img src="{{ site.baseurl }}/assets/images/eht.png" alt="Event Horizon Telescope image of the black hole in M87" />
     <span class="caption">Credit: Event Horizon Telescope Collaboration</span>
 </span>
-My primary research interests lie in the extreme plasma processes occurring just outside the event horizon of accreting black holes. I work on analytical and numerical modelling of plasma energization that powers high-energy emission, specifically using kinetic theory to inform fluid models of relativistic plasmas. Of particular interest to me is a region of very hot, diffuse plasma surrounding accreting black holes called the corona, and my PhD thesis aims to advance models of coronal emission in GRMHD simulations of such environments, improving our understanding of how these systems radiate.
+My primary research interests lie in the **extreme plasma processes** occurring just outside the event horizon of accreting black holes. I work on analytical and numerical modelling of plasma energization that powers high-energy emission, specifically using **kinetic theory** to inform fluid models of relativistic plasmas. Of particular interest to me is a region of very hot, diffuse plasma surrounding accreting black holes called the **corona**, and my PhD thesis aims to advance models of coronal emission in GRMHD simulations of such environments, improving our understanding of how these systems radiate.
 
 <!-- TODO: this picture is also the Galaxy Research page's banner and home tile - use a different one on one of the pages -->
 <span class="image left square">
     <img src="{{ site.baseurl }}/assets/images/galaxy.png" alt="Simulated galaxy from the EAGLE simulations" />
     <span class="caption">Credit: EAGLE</span>
 </span>
-I have a secondary interest in galaxy evolution, specifically in models for feedback from black holes or stars in cosmological simulations.  I have used Milky Way analogues -- galaxies similar to our own -- as a test subject to understand how the physics going into these models may have led to different evolution pathways for the Milky Way.  
+I have a secondary interest in **galaxy evolution**, specifically in models for feedback from black holes or stars in cosmological simulations.  I have used **Milky Way analogues** -- galaxies similar to our own -- as a test subject to understand how the physics going into these models may have led to different evolution pathways for the Milky Way.  
 
 <!-- When the galaxy page is ready, swap the span for: <a href="{{ site.baseurl }}/galaxies.html" class="button icon fa-arrow-right">Galaxy research</a> -->
 <ul class="actions">
@@ -54,7 +54,7 @@ I have a secondary interest in galaxy evolution, specifically in models for feed
 <span class="image right">
     <img src="{{ site.baseurl }}/assets/images/DunlapWorkshop.jpg" alt="Alicia leading a workshop for science educators at the Dunlap Institute" />
 </span>
-Although I gave up classroom teaching, my interest in sharing my passion for physics and astronomy with anyone who will listen remains. Most notably, I love to yap. I have given many outreach talks on a variety of subjects to a variety of audiences. I have had the pleasure of giving lectures in big auditoriums to the general public, run workshops for science educators, and participate in K-12 classroom visits. I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/). I am also proud to have a direct hand in training the next generation of scientists through my history in student supervision, mentorship, and teaching assistantships.
+Although I gave up classroom teaching, my interest in **sharing my passion for physics and astronomy** with anyone who will listen remains. Most notably, I love to yap. I have given many **outreach talks** on a variety of subjects to a variety of audiences. I have had the pleasure of giving **lectures** in big auditoriums to the general public, running **workshops for science educators**, and participating in **K-12 classroom visits**. I have also been involved in a number of outreach events and organizations, including [Discover the Universe](https://www.discovertheuniverse.ca/) and [AstroTours](https://www.astro.utoronto.ca/astrotours/). I am also proud to have a direct hand in training **the next generation of scientists** through my history in student supervision, mentorship, and teaching assistantships.
 
 <ul class="actions">
     <li><a href="{{ site.baseurl }}/outreach.html" class="button icon fa-arrow-right">Outreach</a></li>
@@ -62,7 +62,7 @@ Although I gave up classroom teaching, my interest in sharing my passion for phy
 </ul>
 
 ## <span class="badge fa-paw"></span>Offline
-Outside of science, I love to read (my favourite books are *Project Hail Mary* and *The Book Thief*) and bake.  I play a few instruments and have participated in several bands; currently I am a clarinetist in the [Toronto Concert Band](https://torontoconcertband.com/).  I am also a huge Swiftie!  I love to go outside and have recently become a fan of backpacking and camping.  More than anything, I am obsessed with my cat, Charlotte.  
+Outside of science, I love to read (my favourite books are *Project Hail Mary* and *The Book Thief*) and bake.  I play a few instruments and have participated in several bands; currently I am a **clarinetist** in the [Toronto Concert Band](https://torontoconcertband.com/).  I am also a **huge Swiftie**!  I love to go outside and have recently become a fan of **backpacking and camping**.  More than anything, I am obsessed with **my cat, Charlotte**.  
 
 <!-- Polaroid photo row: all photos are shown at the same height, slightly tilted.
      Set --ar on each to the photo's width / height; the note is the handwritten caption (can be left empty). -->
