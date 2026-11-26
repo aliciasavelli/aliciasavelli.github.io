@@ -72,7 +72,7 @@ If you are interested in working with me, **[please reach out](#get-in-touch){: 
 		<span class="badge fa-file-text-o"></span>
 		<span class="output-kind">Research group &middot; Submitted to ApJ</span>
 		<h3>Untangling Similarities and Differences in Star Formation Histories Across Cosmological Simulations</h3>
-		<p class="output-meta"><strong>A. M. Savelli</strong>, M. A. Kustec, J. S. Speagle, E. Ahmed, Z. Peng, K. G. Iyer, N. Murray &amp; C. Kuang</p>
+		<p class="output-meta"><strong>A. M. Savelli</strong>, M. A. Kustec, J. S. Speagle, K. G. Iyer, E. Ahmed, Z. Peng, N. Murray &amp; C. Kuang</p>
 		<ul class="actions"><li><a href="https://arxiv.org/abs/2610.17359" class="button small icon fa-arrow-right">Read the paper</a></li></ul>
 	</div>
 </div>
