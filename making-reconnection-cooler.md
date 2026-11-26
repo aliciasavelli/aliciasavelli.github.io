@@ -173,7 +173,7 @@ show_tile: false
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-student-ic.png" alt="Energy distributions of the plasma in the particle simulation (PIC) and the fluid simulation (MHD) for inverse Compton cooling, with cooling off and on: kinetic energy of the plasma and bulk motion of the plasma" />
 	<figcaption>Adapted from Fig. 3 of Paper I.</figcaption>
 </figure>
-<figure class="paper-figure plain">
+<figure class="paper-figure plain" style="width: 73.86%; max-width: 38.4em">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-student-sync.png" alt="Kinetic energy distribution of the plasma for synchrotron cooling, with cooling off and on: PIC, MHD, and MHD test particles" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
