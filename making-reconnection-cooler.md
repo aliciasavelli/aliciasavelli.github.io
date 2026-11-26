@@ -186,7 +186,11 @@ show_tile: false
 	<div data-level="astronomer" data-default><p>In Paper II, led by Ma&euml;lle Magnan, we extend our model to <strong>synchrotron cooling</strong>, the radiation from electrons gyrating relativistically around magnetic field lines. As for IC, balancing the reconnection electric field against synchrotron losses defines a characteristic Lorentz factor \(\gamma_{\rm sync}\) that sets the cooling strength. The addition of <strong>test particles</strong>, which are pushed by the RRMHD fields without feeding back on them, is able to capture the kinetic non-thermal tail.</p></div>
 	<div data-level="plasma" hidden><p>In Paper II, led by Ma&euml;lle Magnan, we extend our model to <strong>synchrotron cooling</strong>. Balancing the reconnection electric field against synchrotron losses defines \(\gamma_{\rm sync}\), analogous to \(\gamma_{\rm rad}\). The addition of <strong>test particles</strong> pushed by the RRMHD fields is able to capture the kinetic non-thermal tail.</p></div>
 </div>
-<figure class="paper-figure plain">
+<figure class="paper-figure plain" data-show-for="astronomer">
+	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-astronomer.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC nonthermal tail" />
+	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
+</figure>
+<figure class="paper-figure plain" data-show-for="plasma" hidden>
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-plasma.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC nonthermal tail" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
