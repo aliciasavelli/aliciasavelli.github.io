@@ -149,6 +149,7 @@
 	}
 
 	table.mini-table.regimes { max-width: none; td, th { padding-right: 1.4em; } }
+	.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 2em; table { margin-bottom: 0; } }
 	.table-note { font-size: 0.75em; font-style: italic; margin-top: -1.25em; opacity: 0.75; }
 	.output-cards + .output-cards { margin-top: -0.5em; }
 
