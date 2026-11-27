@@ -196,16 +196,32 @@ show_tile: false
 	<div data-level="astronomer" data-default><p>In Paper II, led by Ma&euml;lle Magnan, we extend our model to <strong>synchrotron cooling</strong>, the radiation from electrons gyrating relativistically around magnetic field lines. As for IC, balancing the reconnection electric field against synchrotron losses defines a characteristic Lorentz factor \(\gamma_{\rm sync}\) that sets the cooling strength. The addition of <strong>test particles</strong>, which are pushed by the RRMHD fields without feeding back on them, is able to capture the kinetic non-thermal tail.</p></div>
 	<div data-level="plasma" hidden><p>In Paper II, led by Ma&euml;lle Magnan, we extend our model to <strong>synchrotron cooling</strong>. Balancing the reconnection electric field against synchrotron losses defines \(\gamma_{\rm sync}\), analogous to \(\gamma_{\rm rad}\). The addition of <strong>test particles</strong> pushed by the RRMHD fields is able to capture the kinetic non-thermal tail.</p></div>
 </div>
+<div class="output-cards" data-show-for="plasma" hidden>
+<div class="output-card">
+	<span class="badge fa-braille"></span>
+	<span class="output-kind">Particles (PIC)</span>
+	<h3>A synchrotron drag force</h3>
+	<div class="equation"><img src="{{ site.baseurl }}/assets/images/plasma/mrc-eq-sync-pic.svg" style="width: 18.0em" alt="F_sync = m_e c squared beta_rec sigma_0 over Delta, times 1 over gamma_sync squared, times (kappa_R minus gamma squared chi_R squared beta)" /></div>
+	<p>\(\boldsymbol{\kappa}_R\) and \(\chi_R^2\) depend on the <strong>fields felt by the particle</strong>: the drag vanishes for an \(\mathbf{E}\times\mathbf{B}\) drift and in the X-points, where \(B \approx 0\).</p>
+</div>
+<div class="output-card">
+	<span class="badge fa-tint"></span>
+	<span class="output-kind">Fluid (RRMHD)</span>
+	<h3>An energy and momentum sink</h3>
+	<div class="equation"><img src="{{ site.baseurl }}/assets/images/plasma/mrc-eq-sync-mhd.svg" style="width: 15.03em" alt="S^0 = minus two thirds rho c squared beta_rec sigma_0 over Delta, times (Theta over Theta_sync) squared, times B-prime squared over B_0 squared; S^i = S^0 beta_Gamma^i" /></div>
+	<p>The sink depends only on the temperature and the magnetic field in the fluid frame, \(B'\). Unlike IC, it has <strong>no bulk-motion term</strong>, so synchrotron cools the plasma without braking the bulk flow.</p>
+</div>
+</div>
 <figure class="paper-figure plain" data-show-for="student" hidden style="width: 73.86%; max-width: 38.4em">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-student-sync.png" alt="Kinetic energy distribution of the plasma for synchrotron cooling, with cooling off and on: PIC, MHD, and MHD test particles" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
 <figure class="paper-figure plain" data-show-for="astronomer">
-	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-astronomer.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC nonthermal tail" />
+	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-astronomer.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC non-thermal tail" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
 <figure class="paper-figure plain" data-show-for="plasma" hidden>
-	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-plasma.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC nonthermal tail" />
+	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-sync-plasma.png" alt="Kinetic energy spectra with synchrotron cooling off and on: PIC, RRMHD, and test particles pushed through the RRMHD fields, which recover the PIC non-thermal tail" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
 </div>
@@ -247,7 +263,7 @@ show_tile: false
 				<!-- TODO: replace the Coming soon button with a link when it's out -->
 				<span class="badge numeral">II</span>
 				<span class="output-kind">Paper II &middot; Synchrotron</span>
-				<h3>Making Reconnection Cooler II: A collisionless model for synchrotron relativistic reconnection in relativistic resistive magnetohydrodynamics with test particles</h3>
+				<h3>Making Reconnection Cooler II: A collisionless model for synchrotron reconnection in relativistic resistive magnetohydrodynamics with test particles</h3>
 				<p class="output-meta">M. Magnan, <strong>A. M. Savelli</strong>, B. Ripperda, D. Gro&scaron;elj &amp; A. Levinson</p>
 				<ul class="actions"><li><span class="button small disabled">Coming soon</span></li></ul>
 			</div>

@@ -64,7 +64,7 @@ If you are interested in working with me, **[please reach out](#get-in-touch){: 
 	<div class="output-card">
 		<span class="badge fa-file-text-o"></span>
 		<span class="output-kind">Maëlle Magnan &middot; Synchrotron</span>
-		<h3>Making Reconnection Cooler II: A collisionless model for synchrotron relativistic reconnection in relativistic resistive magnetohydrodynamics with test particles</h3>
+		<h3>Making Reconnection Cooler II: A collisionless model for synchrotron reconnection in relativistic resistive magnetohydrodynamics with test particles</h3>
 		<p class="output-meta">M. Magnan, <strong>A. M. Savelli</strong>, B. Ripperda, D. Gro&scaron;elj &amp; A. Levinson</p>
 		<ul class="actions"><li><span class="button small disabled">Coming soon</span></li></ul>
 	</div>
