@@ -101,7 +101,7 @@ show_tile: false
 <div class="output-cards">
 <div class="output-card">
 	<span class="badge fa-braille"></span>
-	<span class="output-kind">Particles (PIC)</span>
+	<span class="output-kind">Kinetic (PIC)</span>
 	<h3>A drag force on every particle</h3>
 <div class="levels">
 	<div data-level="student" hidden><p>In the particle simulation, every electron and positron is pushed around by electric and magnetic fields. As the particles move through a bath of photons, they lose energy by scattering photons, which we model as a <strong>radiative drag force</strong> opposing their motion (much like air resistance) that grows stronger the faster the particle moves. Choosing how strong the drag is lets us choose how strongly the plasma cools, from no cooling to strong cooling.</p></div>
@@ -111,7 +111,7 @@ show_tile: false
 </div>
 <div class="output-card">
 	<span class="badge fa-tint"></span>
-	<span class="output-kind">Fluid (RRMHD)</span>
+	<span class="output-kind"><span data-show-for="student" hidden>Fluid (MHD)</span><span data-show-for="astronomer plasma">Fluid (RRMHD)</span></span>
 	<h3>An energy and momentum sink</h3>
 <div class="levels">
 	<div data-level="student" hidden><p>In a fluid description of the plasma, we evolve equations for the conservation of mass, energy, and momentum coupled to Maxwell&rsquo;s equations for electricity and magnetism. &ldquo;Cooling&rdquo; is then treated as <strong>losses of energy and momentum</strong> subtracted from the conservation laws, at a rate found by averaging the radiative drag force over all the electrons in a given cell. The hotter the plasma and the faster it flows, the more it cools.</p></div>
@@ -150,6 +150,7 @@ show_tile: false
 <section id="results">
 	<div class="inner cute accent3">
 		<h2><span class="badge fa-check"></span>Does it work?</h2>
+<span class="subhead">Inverse Compton cooling</span>
 <p class="spec-line" data-show-for="astronomer plasma"><span class="output-kind">Set-up</span>2D Harris current sheet &middot; pair plasma &middot; magnetization \(\sigma_0 = 15\) &middot; guide field \(0.5B_0\) &middot; RRMHD: BHAC &middot; PIC: TRISTAN-MP v2 &middot; ~\(30{,}000^2\) cells</p>
 <figure class="paper-figure plain" data-show-for="student" hidden>
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-fig1-student.jpg" alt="Temperature of the reconnection layer in the particle simulation and in our fluid model, without cooling and with strong cooling" />
@@ -199,7 +200,7 @@ show_tile: false
 <div class="output-cards" data-show-for="plasma" hidden>
 <div class="output-card">
 	<span class="badge fa-braille"></span>
-	<span class="output-kind">Particles (PIC)</span>
+	<span class="output-kind">Kinetic (PIC)</span>
 	<h3>A synchrotron drag force</h3>
 	<div class="equation"><img src="{{ site.baseurl }}/assets/images/plasma/mrc-eq-sync-pic.svg" style="width: 18.0em" alt="F_sync = m_e c squared beta_rec sigma_0 over Delta, times 1 over gamma_sync squared, times (kappa_R minus gamma squared chi_R squared beta)" /></div>
 	<p>\(\boldsymbol{\kappa}_R\) and \(\chi_R^2\) depend on the <strong>fields felt by the particle</strong>: the drag vanishes for an \(\mathbf{E}\times\mathbf{B}\) drift and in the X-points, where \(B \approx 0\).</p>
@@ -212,7 +213,7 @@ show_tile: false
 	<p>The sink depends only on the temperature and the magnetic field in the fluid frame, \(B'\). Unlike IC, it has <strong>no bulk-motion term</strong>, so synchrotron cools the plasma without braking the bulk flow.</p>
 </div>
 </div>
-<figure class="paper-figure plain" data-show-for="student" hidden style="width: 73.86%; max-width: 38.4em">
+<figure class="paper-figure plain" data-show-for="student" hidden style="width: 93.3%; max-width: 48.5em">
 	<img src="{{ site.baseurl }}/assets/images/plasma/mrc-student-sync.png" alt="Kinetic energy distribution of the plasma for synchrotron cooling, with cooling off and on: PIC, MHD, and MHD test particles" />
 	<figcaption>Adapted from Paper II (M. Magnan et al., in prep.).</figcaption>
 </figure>
