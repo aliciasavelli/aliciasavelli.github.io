@@ -4,6 +4,7 @@ title: Teaching & Mentorship
 description: Pedagogy & service
 image: assets/images/TeachingLecture.jpg
 banner_focus: 55% 25%        # which part of the photo stays in view (horizontal, vertical)
+tile_focus: 50% 10%          # same, for the home-page tile (keeps Alicia's head in view on phones)
 banner_center: true
 banner_overlay: 0.35
 banner_style: 6              # banner tint colour: 6 = green (accent6), the colour of this page's home tile
@@ -46,7 +47,7 @@ I continue to teach at the post-secondary level as a **teaching assistant for si
 
 ## <span class="badge fa-lightbulb-o"></span>Student supervision
 <span class="image right">
-    <img src="{{ site.baseurl }}/assets/images/Whiteboard.jpg" alt="Whiteboard covered in a colour-coded derivation" />
+    <img src="{{ site.baseurl }}/assets/images/MaelleAlicia.jpg" alt="Alicia with her student Maëlle Magnan outside the Astronomy and Astrophysics building at the University of Toronto" />
 </span>
 I have had the fortune of **co-supervising six undergraduate students** through honours theses and summer research projects.
 

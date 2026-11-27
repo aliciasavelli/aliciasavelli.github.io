@@ -6,7 +6,7 @@
 <!-- Page tiles. Each page with show_tile: true gets a tile, in the order of tile_order, coloured by its
      tile_accent (accent1-6); tile_icon (e.g. fa-magnet) adds a badge to the title.
      Pages with coming_soon: true get a tile that isn't clickable yet.
-     tile_wide: true makes a tile span the full width. tile_image_phone (optional) is used instead of tile_image on
+     tile_wide: true makes a tile span the full width. tile_focus (optional, e.g. "50% 10%") sets which part of the photo stays in view on the tile. tile_image_phone (optional) is used instead of tile_image on
      screens up to 736 px wide. On computers the tiles are placed by tile_desktop_order
      (if set, otherwise tile_order); on phones they stack in tile_order. -->
 <section id="one" class="tiles home-tiles cute">
@@ -15,8 +15,8 @@
     <span class="image">
       {% if tile.tile_image_phone %}<picture>
         <source media="(max-width: 736px)" srcset="{{ tile.tile_image_phone }}">
-        <img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}" />
-      </picture>{% else %}<img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}" />{% endif %}
+        <img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}"{% if tile.tile_focus %} data-position="{{ tile.tile_focus }}"{% endif %} />
+      </picture>{% else %}<img src="{{ tile.tile_image | default: tile.image }}" alt="{{ tile.title }}"{% if tile.tile_focus %} data-position="{{ tile.tile_focus }}"{% endif %} />{% endif %}
     </span>
     <header class="major">
       {% if tile.coming_soon %}

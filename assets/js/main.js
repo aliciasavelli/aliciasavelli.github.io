@@ -71,8 +71,9 @@
 
 			off = function() {
 
+				// Phones/tablets: no parallax, but keep the focus point (banner_focus) if the page has one.
 				$t
-					.css('background-position', '');
+					.css('background-position', $t.attr('data-focus') || '');
 
 				$window
 					.off('scroll._parallax');
@@ -164,7 +165,7 @@
 
 					// Set position.
 						if (x = $img.data('position'))
-							$image.css('background-position', x);
+							$this.css('background-position', x);
 
 					// Hide original.
 						$image.hide();
